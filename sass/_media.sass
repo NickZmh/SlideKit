@@ -1,0 +1,195 @@
+//@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1600px)
+	.main-banner
+		&::before
+			width: 900px
+
+//@media only screen and (max-width : 1400px)
+//
+//
+@media only screen and (max-width : 1300px)
+	.main-banner
+		&::before
+			width: 750px
+
+@media only screen and (max-width : 1200px)
+	.main-banner
+		padding: 200px 0 250px
+		&::before
+			width: 580px
+		&::after
+			width: 210px
+			height: 540px
+		.block-for-snippet-top
+			&::before
+				width: 135px
+		.block-for-snippet-center-bottom
+			bottom: 170px
+			&::before
+				width: 175px
+				height: 150px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+	.button
+		&.standard-indent
+			padding: 14px 28px
+
+	.main-title
+		font-size: 42px
+		line-height: 56px
+
+	.section
+		&__section-description
+			font-size: 17px
+			line-height: 25px
+
+	header
+		.top-header
+			padding: 15px 0
+		.navi-hamburger
+			display: flex
+		.bottom-header-line
+			.wrapper-content
+				display: none
+				
+
+	.main-banner
+		&::after
+			width: 138px
+			height: 350px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	///*Disable Animation on Mobile Devices*/
+	//.animated
+	//	/*CSS transitions*/
+	//	-o-transition-property: none !important
+	//	-moz-transition-property: none !important
+	//	-ms-transition-property: none !important
+	//	-webkit-transition-property: none !important
+	//	transition-property: none !important
+	//	/*CSS transforms*/
+	//	-o-transform: none !important
+	//	-moz-transform: none !important
+	//	-ms-transform: none !important
+	//	-webkit-transform: none !important
+	//	transform: none !important
+	//	/*CSS animations*/
+	//	-webkit-animation: none !important
+	//	-moz-animation: none !important
+	//	-o-animation: none !important
+	//	-ms-animation: none !important
+	//	animation: none !important
+
+	.main-title
+		font-size: 32px
+		line-height: 45px
+
+	.section
+		&__section-description
+			font-size: 16px
+			line-height: 22px
+	.main-banner
+		padding: 240px 0 140px
+		&::before
+			width: 380px
+		.block-for-snippet-top
+			&::before
+				width: 100px
+		.block-for-snippet-center-bottom
+			bottom: 100px
+			&::before
+				width: 120px
+				height: 150px
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 575px)
+
+	.button
+		width: 100%
+		max-width: 280px
+		justify-content: center
+		text-align: center
+
+	.main-title
+		text-align: center
+		font-size: 28px
+		line-height: 38px
+	.section
+		&__section-description
+			text-align: center
+
+	header
+		.top-header
+			height: 80px
+		.bottom-header-line 
+			.wrapper-content
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: center
+				padding: 15px 0
+				.button
+					width: initial
+					max-width: initial
+				ul
+					display: none
+	.main-banner
+		.wrapper-content
+			text-align: center
+		.button
+			margin-top: 40px
+
+@media only screen and (max-width : 480px)
+	header .top-header .logo
+		img
+			width: 160px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.container,
+	.container-lg,
+	.container-xl
+		max-width: 1385px
+

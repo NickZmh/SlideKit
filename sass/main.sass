@@ -1,0 +1,379 @@
+
+@import "vars.sass"
+
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+body
+	font-family: $Poppins
+	margin: 0
+	line-height: 1.5
+	background-color: #fafbfc
+
+
+//main component style
+
+a
+	text-decoration: none
+
+ul
+	margin: 0
+	padding: 0
+	li
+		list-style-type: none
+
+h1,h3,h4,h4,h5,h6,p
+	margin: 0
+
+.input-wrapper
+	position: relative
+	.search-button
+		position: absolute
+		top: 7px
+		right: 10px
+		cursor: pointer
+		img
+			width: 22px
+
+.standard-input
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: transparent
+	border: 1px solid #c3c3c3
+	height: 40px
+	width: 100%
+	color: #3A3A3A
+	font-family: $Poppins
+	font-size: 15px
+	font-weight: 400
+	padding: 0 15px
+	text-align: left
+	border-radius: 5px
+	&:focus-visible
+		outline: none
+	&::-webkit-input-placeholder
+		font-size: 15px
+		color: $dark-gray
+	&:-moz-placeholder
+		font-size: 15px
+		color: $dark-gray
+	&::-moz-placeholder
+		font-size: 15px
+		color: $dark-gray
+	&:-ms-input-placeholder
+		font-size: 15px
+		color: $dark-gray
+	&::placeholder
+		font-size: 15px
+		color: $dark-gray
+
+button
+	background: none
+	border: none
+	&:focus
+		outline: none
+
+.button
+	&.standard
+		font-size: 15px
+		font-weight: 600
+		border-radius: 5px
+		color: $white-color
+		text-transform: uppercase
+	&.standard-indent
+		padding: 17px 30px
+	&.blue-button
+		background-color: $blue-color
+	&.white-button
+		background-color: #fafbfc
+		color: $blue-color
+		border: 2px solid $blue-color
+	&.color-dark-gray
+		color: $dark-gray
+//end main component style
+
+@import "setting-component"
+
+
+header
+	position: relative
+	z-index: 200
+	box-shadow: 0 8px 11px #e3e4ea
+	.top-header
+		padding: 30px 0 15px
+		.logo
+			margin-right: 35px
+		.wrapper-content
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			.left-snippet
+				flex-grow: 1
+				.input-wrapper
+					display: flex
+					flex-grow: 1
+					margin-right: 40px
+			.left-snippet,
+			.right-snippet
+				flex-direction: row
+				align-items: center
+			.right-snippet
+				.button
+					margin-left: 30px
+
+	.navi-hamburger
+		position: relative
+		display: none
+		flex-direction: column
+		justify-content: space-between
+		margin-left: 20px
+		//top: 60px
+		z-index: 3000
+		//right: 15px
+		float: right
+		height: 48px
+		width: 48px
+		cursor: pointer
+		padding: 10px
+		background-color: transparent
+		transition: all .5s
+		&.open
+			span
+				left: -2px
+				width: 34px
+				&.top
+					top: -2px
+				&.bottom
+					top: 0px
+			span:first-child
+				transform: rotate(45deg) translate(7.4px, 12.4px)
+				left: .5px
+			span:nth-child(2)
+				width: 0
+				opacity: 0
+			span:last-child
+				transform: rotate(-45deg) translate(8.4px, -8.4px)
+		span
+			position: relative
+			display: block
+			top: 0px
+			height: 4px
+			width: 100%
+			border-radius: 5px
+			transition: all .25s
+			background-color: $blue-color
+	.bottom-header-line
+		border-top: 1px solid rgba(186,186,186, .28)
+
+		ul
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			flex-wrap: wrap
+			padding: 12px 0
+			li
+				padding: 3px 27.5px
+	.standard-text
+		font-size: 15px
+		color: $dark-gray
+		font-weight: 600
+		text-transform: uppercase
+
+	//for mob menu
+.nav-mobile
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	position: fixed
+	top: 80px
+	z-index: 2500
+	//padding-top: 160px
+	width: 100%
+	bottom: 0
+	height: 100%
+	left: -100%
+	background-color: #fafbfc
+	transition-property: left
+	transition-duration: .3s
+	transition-timing-function: ease-in
+	overflow: auto
+	.top-header
+		padding-left: 15px
+		padding-right: 15px
+	&.open
+		left: 0
+	#collapse
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		height: 100%
+		ul
+			border-top: 1px solid #d1d7db
+			margin: 0
+			padding: 0
+		li > ul
+			display: none
+		.custom-search
+			padding: 20px
+		li.first-item-menu
+			border-bottom: 1px solid #d1d7db
+			&:last-of-type
+				.link
+					border-bottom: 1px solid transparent
+			&.open
+					i.fa-chevron-right
+						transform: rotate(90deg)
+						transition: transform .15s ease-in-out,-webkit-transform .15s ease-in-out
+			.link
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				padding: 20px 20px
+				cursor: pointer
+				&.active
+					background-color: $blue-color
+					span
+						color: $white-color
+				&:hover
+					transition: background-color .5s
+					background-color: #5f92e6
+					span
+						transition: all .5s
+						color: $white-color
+						opacity: .8
+				&:active
+						background-color: $dark-blue-color
+				&:active
+					span
+						//color: $black-red
+				span,a
+					text-transform: uppercase
+					width: 100%
+					display: flex
+					font-weight: 600
+					font-size: 15px
+					line-height: 16px
+					color: $dark-gray
+				i.fa-chevron-right
+					transition: transform .15s ease-in-out,-webkit-transform .15s ease-in-out
+					//color: $orange
+					font-size: 15px
+			ul.submenu
+				li
+					a
+						display: flex
+						padding: 20px 40px
+						border-bottom: 1px solid #d1d7db
+						background-color: #f5f5f5
+						font-size: 15px
+						line-height: 16px
+						//color: $black-red
+
+
+	//home page
+
+
+
+.main-banner
+	position: relative
+	padding: 250px 0 300px
+	&::before
+		content: ""
+		position: absolute
+		z-index: -1
+		top: 0
+		right: 0
+		background-image: url('../img/main-banner-background-img.png')
+		background-repeat: no-repeat
+		background-position: top right
+		background-size: contain
+		height: 100%
+		width: 1000px
+	&::after
+		content: ''
+		position: absolute
+		width: 260px
+		height: 620px
+		background-image: url("../img/main-banner-bottom-snippet.png")
+		background-repeat: no-repeat
+		background-size: contain
+		bottom: 0
+		z-index: -1
+	.block-for-snippet-top
+		position: absolute
+		top: 40px
+		left: 6vw
+		&::before
+			content: ""
+			position: absolute
+			background-image: url("../img/gold-triangle-snippet.png")
+			background-repeat: no-repeat
+			background-size: contain
+			width: 160px
+			height: 148px
+	.block-for-snippet-center-bottom
+		position: absolute
+		bottom: 200px
+		left: 40vw
+		&::before
+			content: ""
+			position: absolute
+			background-image: url("../img/violet-triangle-snippet.png")
+			background-repeat: no-repeat
+			background-size: contain
+			width: 213px
+			height: 186px
+	.wrapper-content
+		position: relative
+		max-width: 880px
+		z-index: 100
+	.button
+		margin-top: 75px
+
+.white-tile-blocks
+	margin-top: 85px
+	&__body
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		min-height: 285px
+		background-color: $white-color
+		border-radius: 12px
+		box-shadow: 0px 2px 3px rgba(37, 117, 252, 0.1)
+		transition: all .4s
+		&:hover
+			transform: scale(1.03)
+			transition: all .4s
+		&__img-block
+			width: 82px
+			margin-bottom: 35px
+
+//ALWAYS END
+@import "media"
