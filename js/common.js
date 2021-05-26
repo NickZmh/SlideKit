@@ -69,3 +69,26 @@ $(function() {
 	// End for mobile menu
 
 });
+
+$(document).ready(function () {
+
+	$('.feedback-carousel').slick({
+		infinite: true,
+		slidesToShow: 1,
+		centerMode: true,
+		centerPadding: '0',
+		nextArrow: document.getElementById('slick-next'),
+		prevArrow: document.getElementById('slick-prev'),
+	});
+
+
+	// for round banner
+
+	var bannerBlock = $('.banner__block');
+	var bannerBlockHeight = bannerBlock.outerHeight();
+
+	bannerBlock.css('top', -bannerBlockHeight / 2 + 'px')
+
+	// end round banner
+
+})
