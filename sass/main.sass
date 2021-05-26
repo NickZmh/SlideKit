@@ -49,6 +49,9 @@ ul
 h1,h3,h4,h4,h5,h6,p
 	margin: 0
 
+img
+	max-width: 100%
+
 .input-wrapper
 	position: relative
 	.search-button
@@ -74,6 +77,9 @@ h1,h3,h4,h4,h5,h6,p
 	padding: 0 15px
 	text-align: left
 	border-radius: 5px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
 	&:focus-visible
 		outline: none
 	&::-webkit-input-placeholder
@@ -358,6 +364,19 @@ header
 
 .white-tile-blocks
 	margin-top: 85px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+	margin-right: -15px
+	margin-left: -15px
+	&__wrapper
+		width: 100%
+		max-width: 390px
+		padding: 0 15px
+		margin-bottom: 30px
+		&:last-of-type
+			margin-bottom: 0
 	&__body
 		display: flex
 		flex-direction: column
@@ -375,5 +394,31 @@ header
 			width: 82px
 			margin-bottom: 35px
 
+.how-it-works
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: 50px
+		left: 7vw
+		width: 126px
+		height: 121px
+		background-image: url("../img/orange-ball.png")
+		background-repeat: no-repeat
+		background-size: contain
+		z-index: -1
+	&::after
+		content: ''
+		position: absolute
+		top: 250px
+		right: 7vw
+		width: 147px
+		height: 121px
+		background-image: url("../img/gold-part-snippet.png")
+		background-repeat: no-repeat
+		background-size: contain
+		z-index: -1
+	.main-img
+		margin-top: 60px
 //ALWAYS END
 @import "media"
