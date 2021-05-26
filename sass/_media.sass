@@ -9,6 +9,23 @@
 		&::before
 			width: 900px
 
+	.feature-section
+		&.one-snippet
+			&::after
+				top: 100px
+				right: 2vw
+				width: 150px
+		&.two-snippets
+			&::before
+				left: 2vw
+				width: 160px
+				height: 160px
+			&::after
+				bottom: 80px
+				right: 8vw
+				width: 120px
+				height: 120px
+
 @media only screen and (max-width : 1400px)
 	.how-it-works
 		&::before
@@ -41,7 +58,31 @@
 				height: 150px
 	.white-tile-blocks
 		justify-content: center
+	.feature-section
+		.wrapper-content
+			align-items: center
+		.section__section-title,
+		.section__section-description
+			text-align: center
 
+	.templates-example
+		padding-top: 80px
+		.templates-tile__list
+			margin-top: 60px
+			justify-content: center
+		.templates-tile__wrapper
+			margin-bottom: 50px
+	.templates-example
+		&.snippet
+			&::after
+				right: 8px
+				width: 120px
+			&::before
+				width: 130px
+	.prices
+		.prices-tiles-wrapper
+			.prices-tiles__item
+				margin: 0 20px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 
@@ -60,13 +101,15 @@
 		&__section-title
 			font-size: 40px
 			line-height: 54px
+			&.reduce-line-height
+				line-height: 54px
 		&__section-small-title
 			font-size: 22px
 			line-height: 34px
 			font-weight: 600
 		&__section-description
 			font-size: 17px
-			line-height: 25px
+			line-height: 26px!important
 
 	header
 		.top-header
@@ -93,6 +136,42 @@
 			width: 90px
 		&::after
 			width: 100px
+
+	.feature-section
+		&.one-snippet
+			&::after
+				top: 50px
+				right: 3vw
+				width: 120px
+		&.two-snippets
+			&::before
+				left: 2vw
+				width: 120px
+				height: 120px
+			&::after
+				bottom: 20px
+				right: 8vw
+				width: 90px
+				height: 90px
+		.section__section-description
+			margin: 10px 0 30px 0
+
+	.templates-example
+		padding-top: 60px
+		.templates-tile__wrapper
+			max-width: 360px
+		&.snippet
+			.snippet-block
+				&::before
+					top: 180px
+	.prices
+		.prices-tiles-wrapper
+			.prices-tiles__item
+				margin: 0 15px
+				.prices-tiles__body
+					.price-benefits
+						li
+							margin-bottom: 17px
 
 
 /* Small Devices, Tablets */
@@ -126,8 +205,8 @@
 	.section
 		padding: 40px 0
 		&__section-title
-			font-size: 28px
-			line-height: 40px
+			font-size: 30px
+			line-height: 40px!important
 		&__section-description
 			font-size: 16px
 			line-height: 22px
@@ -154,6 +233,26 @@
 			width: 90px
 			top: -30px
 
+	.templates-example
+		.templates-tile__list
+			margin-top: 40px
+		.templates-tile__wrapper
+			margin-bottom: 35px
+			.snippet-text
+				margin-top: 10px
+		.button-wrapper
+			margin-bottom: 0
+	.blue-banner-background
+		height: 500px
+
+	.prices
+		.prices-tiles-wrapper
+			margin-top: 40px
+			flex-direction: column
+			align-items: center
+			.prices-tiles__item
+				margin-bottom: 30px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px)
 
@@ -163,12 +262,11 @@
 		justify-content: center
 		text-align: center
 
-	.main-banner
-		padding: 80px 0
+
 	.main-title
 		text-align: center
-		font-size: 28px
-		line-height: 38px
+		font-size: 32px
+		line-height: 42px
 	.section
 		padding: 35px 0
 		//&__section-title
@@ -179,7 +277,8 @@
 			line-height: 28px
 		&__section-description
 			text-align: center
-
+		&.main-banner
+			padding: 80px 0
 	header
 		.top-header
 			height: 80px
@@ -199,7 +298,7 @@
 		.wrapper-content
 			text-align: center
 		.button
-			margin-top: 40px
+			margin-top: 30px
 	.white-tile-blocks
 		margin-top: 50px
 	.white-tile-blocks__wrapper
@@ -212,6 +311,28 @@
 		&__img-block
 			margin-bottom: 25px
 
+	.feature-section
+		&.one-snippet
+			&::after
+				top: 0px
+				right: 0vw
+				width: 100px
+				height: 100px
+		&.two-snippets
+			&::before
+				top: -40px
+				left: 2vw
+				width: 90px
+				height: 90px
+			&::after
+				bottom: -50px
+				right: 8vw
+				width: 90px
+				height: 90px
+
+	.templates-example
+		.templates-tile__wrapper
+			max-width: 320px
 @media only screen and (max-width : 480px)
 	header
 		.top-header .logo
@@ -221,6 +342,11 @@
 			width: 100%
 			max-width: 50%
 
+	.blue-banner-background
+		height: initial
+		min-height: 280px
+		.img-block
+			display: none
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
