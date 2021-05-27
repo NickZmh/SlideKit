@@ -52,11 +52,18 @@
 		&::before
 			width: 750px
 
+	.product-bottom-slider-wrapper
+		height: 100px
+		.arrow-item
+			img
+				width: 20px
 	footer .item-list:first-of-type
 		max-width: 310px
 @media only screen and (max-width : 1200px)
 
 	.section
+		&__middle-pb-indent
+			padding-bottom: 40px!important
 		&__section-middle-title
 			text-align: center
 			font-size: 50px
@@ -113,6 +120,18 @@
 		.feedback-carousel-wrapper
 			margin-top: 30px
 
+	.product-bottom-slider-wrapper
+		height: 90px
+		.arrow-item
+			img
+				width: 12px
+
+	.section
+		&.product-context
+			padding-top: 30px
+	.product-context
+		.side-bar
+			min-width: 300px
 	footer
 		.wrapper-footer
 			flex-wrap: wrap
@@ -128,6 +147,8 @@
 				order: 3
 			&:nth-of-type(3)
 				order: 4
+		.link-list
+			margin-top: 35px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 
@@ -233,6 +254,46 @@
 		.banner__block
 			padding: 40px 30px
 
+
+	.accordion
+		.a-container
+			.a-btn
+				padding: 12px 30px
+				font-size: 22px
+			.a-panel
+				padding: 0 30px
+				.content
+					padding: 12px 0 25px
+					.description
+						font-size: 16px
+						line-height: 27px
+
+
+	.product-bottom-slider-wrapper
+		.slider-box
+			margin: 0 -7px
+		.item
+			padding: 2px 7px 5px
+		.arrow-item
+			&#slick-prev
+				margin-right: 14px
+			&#slick-next
+				margin-left: 14px
+
+	.product-context
+		.content-wrapper
+			flex-direction: column
+			.side-bar
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: space-between
+				margin-top: 60px
+				.white-bg-tile
+					min-width: 310px
+		.section__section-small-title
+			font-size: 24px
+
 	footer
 		.wrapper-footer
 			flex-wrap: wrap
@@ -242,7 +303,8 @@
 			margin-bottom: 60px
 			&:first-of-type
 				max-width: 280px
-
+		.link-list
+			margin-top: 30px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768.99px)
 	
@@ -296,6 +358,8 @@
 				width: 120px
 				height: 150px
 
+	.blue-bg-banner
+		min-height: 320px
 
 	.white-tile-blocks__body__img-block
 		margin-bottom: 30px
@@ -375,6 +439,37 @@
 					left: -30px
 				&#slick-next
 					right: -20px
+	.accordion
+		margin-top: 30px
+		.a-container
+			.a-btn
+				padding: 10px 20px
+				font-size: 20px
+			.a-panel
+				padding: 0 20px
+				.content
+					padding: 10px 0 25px
+					.description
+						font-size: 16px
+						line-height: 27px
+
+	.product-bottom-slider-wrapper
+		height: 80px
+		.arrow-item
+			img
+				width: 10px
+		.slider-box
+			margin: 0 -5px
+		.item
+			padding: 2px 5px 5px
+		.arrow-item
+			&#slick-prev
+				margin-right: 7px
+			&#slick-next
+				margin-left: 7px
+
+
+
 	footer
 		.wrapper-footer
 			justify-content: center
@@ -383,6 +478,8 @@
 				width: 100%
 				max-width: 50%
 				margin-bottom: 60px
+				&:last-of-type
+					margin-bottom: 30px
 				.title,
 				.description
 					text-align: center
@@ -398,6 +495,8 @@
 					display: flex
 					flex-direction: column
 					align-items: center
+		.link-list
+			margin-top: 40px
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width : 600px)
@@ -512,6 +611,35 @@
 		.banner__block
 			padding: 30px 20px
 
+	.accordion
+		.a-container
+			.a-btn
+				padding: 10px 20px
+				font-size: 18px
+			.a-panel
+				padding: 0 20px
+				.content
+					padding: 10px 0 25px
+					.description
+						font-size: 15px
+						line-height: 27px
+
+	.product-context
+		.content-wrapper
+			.side-bar
+				min-width: initial
+				justify-content: center
+				.white-bg-tile
+					min-width: initial
+					width: 100%
+					max-width: 320px
+				.list-links
+					li
+						margin-right: 18px
+
+		.description
+			font-size: 15px
+
 	footer
 		padding: 250px 0 40px
 
@@ -529,6 +657,31 @@
 		min-height: 280px
 		.img-block
 			display: none
+
+	.product-bottom-slider-wrapper
+		height: 90px
+		position: relative
+		.arrow-item
+			img
+				width: 8px
+		.slider-box
+			margin-left: -5px
+			margin-right: -5px
+			width: 100%
+		.item
+			padding: 2px 5px 5px
+		.arrow-item
+			position: absolute
+			z-index: 100
+			width: 20px
+			height: 40px
+			top: calc(50% - 30px)
+			&#slick-prev
+				margin-right: 7px
+				left: -20px
+			&#slick-next
+				margin-left: 7px
+				right: -20px
 
 	footer
 		.main-title

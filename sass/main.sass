@@ -27,12 +27,15 @@ body textarea:required:valid
 	color: #666
 
 //Custom Styles Here
+html
+	overflow-x: hidden
 
 body
 	font-family: $Poppins
 	margin: 0
 	line-height: 1.5
 	background-color: #fafbfc
+	overflow-x: hidden
 
 
 //main component style
@@ -115,12 +118,17 @@ button
 		padding: 17px 30px
 	&.blue-button
 		background-color: $blue-color
+		&.shadow
+			box-shadow: 0px 6px 30px rgba(37, 117, 252, 0.4)
+	&.red-button
+		background-color: #FF4444
 	&.white-button
 		background-color: #fafbfc
 		color: $blue-color
 		border: 2px solid $blue-color
 	&.color-dark-gray
 		color: $dark-gray
+
 //end main component style
 
 @import "setting-component"
@@ -130,6 +138,8 @@ header
 	position: relative
 	z-index: 200
 	box-shadow: 0 8px 11px #e3e4ea
+	&.non-box-shadow
+		box-shadow: none
 	.top-header
 		padding: 30px 0 15px
 		.logo
@@ -471,7 +481,6 @@ header
 
 .templates-example
 	padding-top: 120px
-	background-color: $white-color
 	position: relative
 	z-index: 1
 	&.snippet
@@ -539,7 +548,6 @@ header
 				display: block
 	.button-wrapper
 		margin-top: 10px
-		margin-bottom: 20px
 
 .blue-banner-background
 	position: relative
@@ -597,6 +605,9 @@ header
 				background-repeat: no-repeat
 				background-size: contain
 				z-index: -1
+	.wrapper-content
+		&.narrow
+			max-width: 580px
 	.section__section-description
 		max-width: 820px
 	.prices-tiles-wrapper
@@ -617,6 +628,7 @@ header
 				padding: 25px 20px 40px
 				filter: drop-shadow(0px 16px 28px rgba(37, 117, 252, 0.15))
 				box-shadow: 0px 16px 28px rgba(37, 117, 252, 0.15)
+				position: relative
 				&.white
 					background-color: $white-color
 					.section__section-small-title,
@@ -637,6 +649,34 @@ header
 							color: $white-color
 					.button
 						border: 2px solid $white-color
+				&.blur
+					/* Note: currently only Safari supports backdrop-filter */
+					backdrop-filter: blur(5px)
+					--webkit-backdrop-filter: blur(5px)
+					background-color: rgba(255, 255, 255, 0.1)
+				&.snippet
+					&::before
+						content: ''
+						position: absolute
+						top: 31%
+						right: -75px
+						width: 160px
+						height: 160px
+						background-image: url("../img/green-triangle-boll-snippet.png")
+						background-repeat: no-repeat
+						background-size: contain
+						z-index: -1
+					&::after
+						content: ''
+						position: absolute
+						bottom: -80px
+						left: -60px
+						width: 160px
+						height: 160px
+						background-image: url("../img/dobble-triangle-snippet.png")
+						background-repeat: no-repeat
+						background-size: contain
+						z-index: -1
 				.section__section-small-description
 					font-weight: 300
 				.price-text
@@ -763,10 +803,238 @@ header
 			width: 100%
 			max-width: 1100px
 
+
+.blue-bg-banner
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	min-height: 430px
+	background-image: url("../img/blue-bg-banner.png")
+	background-repeat: no-repeat
+	background-size: cover
+
+
+.accordion
+	margin-top: 50px
+	display: flex
+	flex-direction: column
+	width: 100%
+	height: auto
+	.a-container
+		display: flex
+		flex-direction: column
+		width: 100%
+		margin-bottom: 12px
+		border-radius: 10px
+		background-color: $white-color
+		//border: 0.01px solid rgba(210, 210, 210, 0.63)
+		.a-panel
+			width: 100%
+			color: #262626
+			transition: all 0.2s ease
+			opacity: 0
+			height: auto
+			max-height: 0
+			overflow: hidden
+			padding: 0px 45px
+			.content
+				border-top: 1px solid rgba(37, 117, 252, 0.15)
+				padding: 14px 0 28px
+				.description
+					font-size: 18px
+					line-height: 29px
+					font-weight: 400
+		&.active
+			box-shadow: 0px 5px 8px rgba(37, 117, 252, 0.13)
+			.a-panel
+				opacity: 1
+				max-height: 500px
+				transition: all 0.3s ease
+	.a-btn
+		margin: 0
+		position: relative
+		padding: 15px 45px 15px
+		width: 100%
+		color: #414141
+		font-size: 23px
+		display: block
+		font-weight: 600
+		cursor: pointer
+		transition: all 0.3s ease
+		border-radius: 5px
+	span
+		display: block
+		position: absolute
+		height: 14px
+		width: 14px
+		right: 20px
+		top: 18px
+		&:after
+			content: ''
+			width: 14px
+			height: 3px
+			border-radius: 2px
+			background-color: #fff
+			position: absolute
+			top: 6px
+
+
+	&.active
+		.a-btn
+			color: #fff
+		span
+			&::before
+				transform: rotate(0deg)
+
+
+.product-top-slider
+	.slick-slide>div
+		display: block
+	.item
+		display: flex!important
+		flex-grow: 1
+		.wrapper-img
+			img
+				display: block
+				border-radius: 8px
+
+.product-bottom-slider-wrapper
+	display: flex
+	flex-direction: row
+	justify-content: center
+	margin-top: 20px
+	height: 115px
+	.product-bottom-slider
+		height: 100%
+		.slick-list,
+		.slick-track
+			height: 100%
+		.slick-slide>div
+			height: 100%
+		.slick-slide
+			&.slick-current
+				&.slick-active
+					.item
+						.img-wrapper
+							img
+								border: .5px solid $blue-color
+	.slider-box
+		width: 90%
+		margin: 0 -12px
+		//max-width: 100%
+	.item
+		padding: 2px 12px 5px
+		display: flex!important
+		height: 100%
+		.img-wrapper
+			cursor: pointer
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				box-shadow: 0px 3px 3px rgba(0, 22, 60, 0.15)
+				border-radius: 7px
+	.arrow-item
+		display: flex!important
+		flex-grow: 1
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		width: 50px
+		background-color: $white-color
+		border-radius: 7px
+		box-shadow:  0px 3px 3px rgba(0, 22, 60, 0.15)
+		cursor: pointer
+		margin: 2px 0 5px
+		&#slick-prev
+			margin-right: 22px
+		&#slick-next
+			margin-left: 22px
+		img
+			width: 25px
+
+.product-context
+	.content-wrapper
+		display: flex
+		flex-direction: row
+	.content-block
+		padding-right: 30px
+	.section__section-small-title
+		margin-bottom: 15px
+	.description
+		font-family: "Open Sans",sans-serif
+		line-height: 29px
+		margin-bottom: 30px
+		&:last-of-type
+			margin-bottom: 0
+	.side-bar
+		min-width: 350px
+		.white-bg-tile
+			margin-bottom: 25px
+			&:last-of-type
+				padding-bottom: 40px
+				margin-bottom: 0
+		.title
+			font-size: 17px
+			font-weight: 600
+			margin-bottom: 18px
+		.button
+			margin-bottom: 20px
+			&:last-of-type
+				margin-bottom: 0
+		.list-links
+			display: flex
+			flex-direction: row
+			li
+				margin-right: 24px
+				&:last-of-type
+					margin-right: 0
+				a
+					display: flex
+					flex-direction: row
+					align-items: center
+					justify-content: center
+					border-radius: 5px
+					width: 44px
+					height: 44px
+					border: 0.1px solid #bfbfbf59
+		.list-products
+			display: flex
+			flex-direction: row
+			li
+				margin-right: 20px
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: center
+				border-radius: 5px
+				width: 40px
+				height: 40px
+				&.blue
+					background-color: $blue-color
+				&.orange
+					background-color: #F5B913
+				&.red
+					background-color: #E54B23
+				&:last-of-type
+					margin-right: 0
+		.list-text
+			margin-bottom: 25px
+			li
+				font-size: 17px
+				line-height: 20px
+				color: #5D5D5D
+				margin-bottom: 15px
+				&:last-of-type
+					margin-bottom: 0
+
 footer
-	padding: 200px 0 60px
+	padding: 200px 0 70px
 	background-color: #001840
 	color: #DDDDDD
+	&.standard-top-indent
+		padding-top: 90px
 	a
 		color: #DDDDDD
 	.wrapper-footer
@@ -850,5 +1118,15 @@ footer
 				font-size: 13px
 				line-height: 20px
 				font-weight: 400
+	.link-list
+		display: flex
+		flex-direction: row
+		margin-top: 45px
+		li
+			margin-right: 26px
+			a
+				display: flex
+
+
 //ALWAYS END
 @import "media"

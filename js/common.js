@@ -91,4 +91,82 @@ $(document).ready(function () {
 
 	// end round banner
 
+	// accordion
+
+
+	function initAcc(elem, option){
+		document.addEventListener('click', function (e) {
+			if (!e.target.matches(elem+' .a-btn')) return;
+			else{
+				if(!e.target.parentElement.classList.contains('active')){
+					if(option==true){
+						var elementList = document.querySelectorAll(elem+' .a-container');
+						Array.prototype.forEach.call(elementList, function (e) {
+							e.classList.remove('active');
+						});
+					}
+					e.target.parentElement.classList.add('active');
+				}else{
+					e.target.parentElement.classList.remove('active');
+				}
+			}
+		});
+	}
+
+	initAcc('.accordion.v1', true);
+	initAcc('.accordion.v2', false);
+
+	// end accordion
+
+
+	// product carousel
+
+
+	$('.product-top-slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		centerMode: true,
+		arrows: false,
+		centerPadding: '0',
+		asNavFor: '.product-bottom-slider',
+	});
+	$('.product-bottom-slider').slick({
+		infinite: true,
+		slidesToShow: 6,
+		// centerMode: true,
+		centerPadding: '0',
+		asNavFor: '.product-top-slider',
+		focusOnSelect: true,
+		responsive: [
+			{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 5
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 2
+				}
+			}
+		],
+		nextArrow: document.getElementById('slick-next'),
+		prevArrow: document.getElementById('slick-prev'),
+	});
+
+	// end product carousel
+
 })
