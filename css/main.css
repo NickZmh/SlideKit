@@ -1334,10 +1334,10 @@ footer {
     margin: 10px 0 30px 0; }
   .templates-example {
     padding-top: 60px; }
-    .templates-example .templates-tile__list {
-      justify-content: center; }
     .templates-example .templates-tile__wrapper {
-      max-width: 360px; }
+      max-width: 50%;
+      width: 50%;
+      min-width: initial; }
     .templates-example.snippet .snippet-block::before {
       top: 180px; }
   .prices .prices-tiles-wrapper .prices-tiles__item {
@@ -1609,6 +1609,8 @@ footer {
     right: 8vw;
     width: 90px;
     height: 90px; }
+  .templates-example .templates-tile__list {
+    justify-content: center; }
   .templates-example .templates-tile__wrapper {
     width: 100%;
     max-width: 320px;
