@@ -1610,7 +1610,9 @@ footer {
     width: 90px;
     height: 90px; }
   .templates-example .templates-tile__wrapper {
-    max-width: 320px; }
+    width: 100%;
+    max-width: 320px;
+    min-width: initial; }
   .round-snippet-banner .banner__block {
     padding: 30px 20px; }
   .accordion .a-container .a-btn {
