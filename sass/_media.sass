@@ -9,6 +9,9 @@
 		&::before
 			width: 900px
 
+	.section__img-wrapper-pressed
+		width: 60%
+
 	.feature-section
 		&.one-snippet
 			&::after
@@ -41,6 +44,39 @@
 					right: 0vw
 
 @media only screen and (max-width : 1400px)
+
+	.main-title
+		font-size: 60px
+		line-height: 68px
+	.section__section-title
+		font-size: 50px
+		line-height: 56px
+	.section__section-description
+		font-size: 22px
+		line-height: 34px
+	.section__wrapper-content
+		&.left-indent
+			padding-left: 0
+	.section__text-container
+		max-width: 40%
+	.section.pressed-img
+		.section__text-container
+			max-width: 41%
+			min-height: 650px
+	.section__section-title-bigger
+		font-size: 50px
+		line-height: 65px
+	.section__section-description-bigger
+		font-size: 26px
+		line-height: 36px
+
+
+	.benefits
+		.tile-color
+			.text-block
+				max-width: 685px
+				.common-underline
+					margin-top: 15px
 	.how-it-works
 		&::before
 			left: 2vw
@@ -66,17 +102,56 @@
 			padding-bottom: 40px!important
 		&__section-middle-title
 			text-align: center
-			font-size: 50px
-			line-height: 72px
+			font-size: 45px
+			line-height: 56px
+	.section__section-title-bigger
+		font-size: 45px
+		line-height: 56px
+	.section__section-description-bigger
+		font-size: 20px
+		line-height: 28px
+		margin-top: 25px
+	.section__section-button
+		margin-top: 30px
+	.section.pressed-img
+		.section__text-container
+			min-height: 535px
+	.section__img-wrapper-pressed
+		height: 100%
+		top: 0
+		display: flex
+		flex-direction: row
+		align-items: center
+
+	header .top-header .wrapper-content .nav-menu .item
+		padding: 0 20px
+
+	.main-title
+		font-size: 50px
+		line-height: 58px
+	.section__section-title
+		font-size: 40px
+		line-height: 46px
+	.section__section-small-title
+		font-size: 22px
+		line-height: 26px
+	.section__section-description
+		font-size: 20px
+		line-height: 32px
+	.section__wrapper-content
+		&.left-indent
+			padding-left: 0
+
 
 	.main-banner
-		padding: 200px 0 200px
+		//padding: 200px 0 200px
 		&::before
 			width: 580px
 			background-image: initial
 		&::after
-			width: 210px
-			height: 540px
+			width: 70px
+			height: 160px
+			bottom: 0
 		.block-for-snippet-top
 			&::before
 				width: 135px
@@ -85,8 +160,43 @@
 			&::before
 				width: 175px
 				height: 150px
+		.section__text-container
+			max-width: 380px
+
+	.benefits
+		&::after
+			width: 70px
+			height: 160px
+		.tile-color
+			padding: 100px 20px 140px
+			.text-block
+				max-width: 550px
+				.common-underline
+					margin-top: 10px
+		.white-tile-blocks__body
+			min-height: 345px
+		.white-tile-blocks__body__count
+			font-size: 65px
+			line-height: 50px
+		.white-tile-blocks__body__description
+			font-size: 16px
+			line-height: 26px
+
 	.white-tile-blocks
 		justify-content: center
+
+
+	.our-clients .logo-items
+		li
+			width: 160px
+			min-width: initial
+			min-height: initial
+			height: 80px
+			img
+				object-fit: contain
+				height: 100%
+
+
 	.feature-section
 		.wrapper-content
 			align-items: center
@@ -160,13 +270,30 @@
 		&.standard-indent
 			padding: 14px 28px
 
+	header .top-header .wrapper-content
+		.nav-menu
+			display: none!important
+
 	.main-title
-		font-size: 42px
-		line-height: 56px
-
+		//font-size: 42px
+		//line-height: 56px
+		text-align: center
+		.underline-block
+			&::after
+				width: 0
 	.main-banner
-		padding: 160px 0 140px
-
+		padding: 80px 0 80px
+		.section__section-description
+			text-align: center
+			max-width: 480px
+		.section__wrapper-content
+			flex-direction: column
+			align-items: center
+		.section__text-container
+			align-items: center
+			max-width: 580px
+			.underline-block
+				width: 50%
 	.section
 		&__section-title
 			font-size: 40px
@@ -181,27 +308,47 @@
 			line-height: 34px
 			font-weight: 600
 		&__section-description
-			font-size: 17px
+			font-size: 18px
 			line-height: 26px!important
 			margin-top: 15px!important
 		&__section-middle-description
 			margin-top: 15px
+		&__wrapper-content
+			flex-direction: column
+			align-items: center
+		&__img-wrapper
+			margin-bottom: 35px
+
+	.section__section-title-bigger
+		font-size: 40px
+		line-height: 52px
+		text-align: center
+	.section .section__text-container
+		max-width: 480px!important
+		min-height: initial!important
+		align-items: center
+		.section__section-description-bigger
+			text-align: center
+	.section__img-wrapper-pressed
+		width: 100%
+		position: relative
+
+
 
 	header
 		.top-header
-			padding: 15px 0
+			padding: 35px 0
 		.navi-hamburger
 			display: flex
 		.bottom-header-line
 			.wrapper-content
 				display: none
-				
 
-	.main-banner
-		&::after
-			width: 138px
-			height: 350px
-
+	.benefits
+		.tile-color
+			padding: 80px 0 140px
+			.text-block
+				padding: 0 15px
 	.white-tile-blocks__wrapper
 		max-width: 360px
 	.white-tile-blocks__body
@@ -337,8 +484,8 @@
 	//	animation: none !important
 
 	.main-title
-		font-size: 32px
-		line-height: 45px
+		font-size: 34px
+		line-height: 46px
 
 	.section
 		padding: 50px 0 60px
@@ -349,10 +496,26 @@
 			font-size: 30px
 			line-height: 40px
 		&__section-description
-			font-size: 16px
+			font-size: 18px
 			line-height: 22px
+	.section__section-title-bigger
+		font-size: 30px
+		line-height: 42px
+	.section__section-description-bigger
+		font-size: 18px
+		line-height: 26px
+		margin-top: 20px
+	.section__section-button
+		margin-top: 25px
+	.section__wrapper-content
+		&.right-indent
+			.section__text-container
+				padding-left: 0
 	.main-banner
-		padding: 120px 0 100px
+		//padding: 120px 0 100px
+		&::after
+			width: 50px
+			height: 110px
 		&::before
 			width: 380px
 		.block-for-snippet-top
@@ -364,12 +527,43 @@
 			&::before
 				width: 120px
 				height: 150px
-
+		.section__text-container .underline-block
+			display: initial
+	.benefits
+		&::after
+			width: 50px
+			height: 110px
+		.white-tile-blocks
+			margin-top: 65px
+			&__wrapper
+				&.snippet-triangle
+					&::before
+						width: 70px
+						top: -40px
+						left: 0px
+				&.snippet-circle
+					&::before
+						width: 70px
+						height: 70px
+						bottom: -40px
+						right: 0
 	.blue-bg-banner
 		min-height: 320px
 
 	.white-tile-blocks__body__img-block
 		margin-bottom: 30px
+
+	.our-clients .logo-items
+		li
+			width: 135px
+			min-width: initial
+			min-height: initial
+			height: 65px
+			padding: 0 15px 20px
+			img
+				object-fit: contain
+				height: 100%
+
 
 	.how-it-works
 		&::before
@@ -558,7 +752,7 @@
 		&__section-description
 			text-align: center
 		&.main-banner
-			padding: 80px 0
+			padding: 60px 0
 	header
 		.top-header
 			height: 80px
@@ -584,13 +778,27 @@
 	.white-tile-blocks__wrapper
 		max-width: 320px
 	.white-tile-blocks__body
-		min-height: 220px
 		.section__section-small-title
 			font-size: 18px
 			line-height: 24px
 		&__img-block
 			margin-bottom: 25px
 
+	.benefits
+		.tile-color
+			padding: 80px 5px 120px
+		.white-tile-blocks__wrapper
+			margin-bottom: 20px
+		.white-tile-blocks__body
+			min-height: 340px
+			justify-content: center
+			padding: 40px 30px 45px
+
+	.our-clients
+		.logo-items
+			li
+				width: 120px
+				height: 60px
 	.feature-section
 		&.one-snippet
 			&::after
@@ -727,16 +935,27 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
-	/**/
+	.container,
+	.container-lg,
+	.container-xl
+		max-width: 1570px
 
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
-	.container,
-	.container-lg,
-	.container-xl
-		max-width: 1385px
+
 
 	footer
 		.left-side
 			max-width: 450px
+
+@media only screen and (min-width : 2100px)
+	body
+		display: flex
+		flex-direction: column
+		align-items: center
+	.section
+		width: 100%
+		&.pressed-img,
+		&.feedbacks
+			max-width: 1600px

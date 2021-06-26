@@ -1,5 +1,7 @@
 
+@import "fonts"
 @import "vars.sass"
+
 
 
 
@@ -31,10 +33,10 @@ html
 	overflow-x: hidden
 
 body
-	font-family: $Poppins
+	font-family: $Roboto
 	margin: 0
-	line-height: 1.5
-	background-color: #fafbfc
+	line-height: 1.4
+	background-color: $white-color
 	overflow-x: hidden
 
 
@@ -109,58 +111,67 @@ button
 
 .button
 	&.standard
-		font-size: 15px
-		font-weight: 600
+		font-size: 18px
+		font-weight: 500
 		border-radius: 5px
 		color: $white-color
-		text-transform: uppercase
-	&.standard-indent
-		padding: 17px 30px
+	&.standard
+		height: 45px
+		padding: 0px 40px
 	&.blue-button
 		background-color: $blue-color
 		&.shadow
 			box-shadow: 0px 6px 30px rgba(37, 117, 252, 0.4)
 	&.red-button
-		background-color: #FF4444
+		background-color: $light-red
 	&.white-button
 		background-color: #fafbfc
 		color: $blue-color
 		border: 2px solid $blue-color
 	&.color-dark-gray
 		color: $dark-gray
-
+	&.light-pink
+		background-color: rgba(255, 104, 40, 0.071)
+		color: $light-red
+		&.oval
+			border: 2px solid rgb(255, 122, 81)
+	&.oval
+		border-radius: 22px
 //end main component style
 
 @import "setting-component"
 
 
 header
+	width: 100%
 	position: relative
 	z-index: 200
-	box-shadow: 0 8px 11px #e3e4ea
 	&.non-box-shadow
 		box-shadow: none
 	.top-header
-		padding: 30px 0 15px
-		.logo
-			margin-right: 35px
+		padding: 60px 0 60px
 		.wrapper-content
 			display: flex
 			flex-direction: row
 			justify-content: space-between
-			.left-snippet
-				flex-grow: 1
-				.input-wrapper
-					display: flex
-					flex-grow: 1
-					margin-right: 40px
+			.nav-menu
+				flex-direction: row
+				align-items: center
+				.item
+					padding: 0 27px
+					a
+						color: $black-color
+						font-family: $Rubik
+						font-weight: 400
 			.left-snippet,
 			.right-snippet
 				flex-direction: row
 				align-items: center
 			.right-snippet
 				.button
-					margin-left: 30px
+					font-size: 15px
+
+					margin-left: 25px
 
 	.navi-hamburger
 		position: relative
@@ -202,23 +213,13 @@ header
 			width: 100%
 			border-radius: 5px
 			transition: all .25s
-			background-color: $blue-color
-	.bottom-header-line
-		border-top: 1px solid rgba(186,186,186, .28)
+			background-color: #f3904f
 
-		ul
-			display: flex
-			flex-direction: row
-			justify-content: flex-start
-			flex-wrap: wrap
-			padding: 12px 0
-			li
-				padding: 3px 27.5px
 	.standard-text
-		font-size: 15px
-		color: $dark-gray
-		font-weight: 600
-		text-transform: uppercase
+		font-size: 16px
+		color: $black-gray
+		font-weight: 500
+
 
 	//for mob menu
 .nav-mobile
@@ -328,91 +329,219 @@ header
 
 .main-banner
 	position: relative
-	padding: 250px 0 300px
-	&::before
-		content: ""
-		position: absolute
-		z-index: -1
-		top: 0
-		right: 0
-		background-image: url('../img/main-banner-background-img.png')
-		background-repeat: no-repeat
-		background-position: top right
-		background-size: contain
-		height: 100%
-		width: 1000px
+	padding: 40px 0 60px
+	//&::before
+	//	content: ""
+	//	position: absolute
+	//	z-index: -1
+	//	top: 0
+	//	right: 0
+	//	background-image: url('../img/main-banner-background-img.png')
+	//	background-repeat: no-repeat
+	//	background-position: top right
+	//	background-size: contain
+	//	height: 100%
+	//	width: 1000px
 	&::after
 		content: ''
 		position: absolute
-		width: 260px
-		height: 620px
+		width: 125px
+		height: 260px
 		background-image: url("../img/main-banner-bottom-snippet.png")
 		background-repeat: no-repeat
 		background-size: contain
-		bottom: 0
+		right: 0
+		bottom: -50px
 		z-index: -1
 	.block-for-snippet-top
-		position: absolute
-		top: 40px
-		left: 6vw
+		position: relative
 		&::before
 			content: ""
 			position: absolute
-			background-image: url("../img/gold-triangle-snippet.png")
+			background-image: url("../img/orange-line-circle.png")
 			background-repeat: no-repeat
 			background-size: contain
-			width: 160px
-			height: 148px
-	.block-for-snippet-center-bottom
-		position: absolute
-		bottom: 200px
-		left: 40vw
-		&::before
-			content: ""
-			position: absolute
-			background-image: url("../img/violet-triangle-snippet.png")
-			background-repeat: no-repeat
-			background-size: contain
-			width: 213px
-			height: 186px
+			top: -75px
+			right: 25px
+			width: 170px
+			height: 170px
+			z-index: -1
+		img
+			z-index: 150
+	//.block-for-snippet-center-bottom
+	//	position: absolute
+	//	bottom: 200px
+	//	left: 40vw
+	//	&::before
+	//		content: ""
+	//		position: absolute
+	//		background-image: url("../img/violet-triangle-snippet.png")
+	//		background-repeat: no-repeat
+	//		background-size: contain
+	//		width: 213px
+	//		height: 186px
+	.section__section-description
+		margin-top: 25px
 	.wrapper-content
 		position: relative
 		max-width: 880px
 		z-index: 100
 	.button
-		margin-top: 75px
+		margin-top: 35px
 
-.white-tile-blocks
-	margin-top: 85px
-	display: flex
-	flex-direction: row
-	justify-content: space-between
-	flex-wrap: wrap
-	margin-right: -15px
-	margin-left: -15px
-	&__wrapper
-		width: 100%
-		max-width: 390px
-		padding: 0 15px
-		margin-bottom: 30px
-		&:last-of-type
-			margin-bottom: 0
-	&__body
+.benefits
+	position: relative
+	&::after
+		content: ''
+		position: absolute
+		bottom: -75px
+		left: 0
+		width: 140px
+		height: 268px
+		background-image: url("../img/orange-half-ball.png")
+		background-repeat: no-repeat
+		background-size: contain
+		z-index: -1
+	.tile-color
 		display: flex
 		flex-direction: column
 		align-items: center
+		padding: 100px 20px 190px
+		background-image: url("../img/benefits-background.png")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		.text-block
+			max-width: 860px
+			text-align: center
+			.common-underline
+				margin-top: 20px
+				width: 50%
+	.section__section-subtitle
+		font-size: 16px
+		color: #666666
+		margin-bottom: 5px
+	.white-tile-blocks
+		width: 100%
+		margin-top: 85px
+		display: flex
+		flex-direction: row
 		justify-content: center
-		min-height: 285px
-		background-color: $white-color
-		border-radius: 12px
-		box-shadow: 0px 2px 3px rgba(37, 117, 252, 0.1)
-		transition: all .4s
-		&:hover
-			transform: scale(1.03)
+		flex-wrap: wrap
+		margin-right: -15px
+		margin-left: -15px
+		&__wrapper
+			width: 100%
+			max-width: 390px
+			padding: 0 15px
+			margin-bottom: 30px
+			&.snippet-triangle
+				position: relative
+				z-index: 1
+				&::before
+					content: ''
+					position: absolute
+					top: -45px
+					left: -35px
+					width: 115px
+					height: 80px
+					background-image: url("../img/line-triangle.png")
+					background-repeat: no-repeat
+					background-size: contain
+					z-index: -1
+			&.snippet-circle
+				position: relative
+				z-index: 1
+				&::before
+					content: ''
+					position: absolute
+					bottom: -35px
+					right: -60px
+					width: 147px
+					height: 147px
+					background-image: url("../img/orange-line-circle-img.png")
+					background-repeat: no-repeat
+					background-size: contain
+					z-index: -1
+			&:last-of-type
+				margin-bottom: 0
+		&__body
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			justify-content: flex-start
+			padding: 60px 40px 50px
+			min-height: 370px
+			background-color: $white-color
+			border-radius: 5px
+			box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.04)
 			transition: all .4s
-		&__img-block
-			width: 82px
-			margin-bottom: 35px
+			&:hover
+				transform: scale(1.03)
+				transition: all .4s
+			.section__section-small-description
+				margin-bottom: 5px
+			&__count
+				font-size: 80px
+				line-height: 65px
+				color: $light-red
+				margin-left: -3px
+				margin-bottom: 10px
+			&__description
+				font-size: 18px
+				line-height: 28px
+				font-weight: 400
+				color: #666666
+				margin-top: 8px
+			.section-button
+				color: $light-red
+
+
+.our-clients
+	.logo-items
+		display: flex
+		flex-direction: row
+		justify-content: center
+		flex-wrap: wrap
+		margin-top: 35px
+		li
+			display: flex
+			flex-direction: row
+			align-items: center
+			justify-content: center
+			width: 200px
+			min-width: 20%
+			min-height: 80px
+			padding: 0 20px 25px
+
+.feedbacks
+	padding-top: 100px
+	.section
+		&__wrapper-content
+			height: 820px
+			width: 40%
+		&__img-wrapper-pressed
+			position: absolute
+			left: 0
+			width: 40%
+			background-image: url("../img/background-feedback-block.png")
+			background-repeat: no-repeat
+			height: 820px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+		&__wrapper-carousel
+			width: 50%
+		&__section-title
+			width: 100%
+			max-width: 400px
+			line-height: 72px
+			margin-right: -300px
+			margin-top: -130px
+			.replace
+				display: flex
+
 
 .how-it-works
 	position: relative
@@ -717,7 +846,6 @@ header
 						&:last-of-type
 							margin-bottom: 0!important
 .feedbacks
-	padding-top: 120px
 	background-color: $white-color
 	position: relative
 	&.snippet

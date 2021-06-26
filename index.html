@@ -8,7 +8,7 @@
 
 	<meta charset="utf-8">
 
-	<title>SliderHeap</title>
+	<title>SliderKit | Home</title>
 	<meta name="description" content="">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -19,8 +19,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="libs/slick/css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="libs/slick/css/slick-theme.css"/>
@@ -45,45 +46,23 @@
 				<div class="col-12 wrapper-content">
 					<div class="d-flex left-snippet">
 						<a href="#" class="logo d-flex">
-							<img src="img/header-logo.svg" alt="">
+							<img src="img/logo.png" alt="">
 						</a>
-						<div class="input-wrapper d-none d-lg-flex">
-							<input type="text" class="standard-input">
-							<button class="search-button" type="submit">
-								<img src="img/search-icon.svg" alt="">
-							</button>
-						</div>
 					</div>
+					<ul class="nav-menu d-flex">
+						<li class="item standard-description"><a href="#">Templates</a></li>
+						<li class="item standard-description"><a href="#">Support</a></li>
+						<li class="item standard-description"><a href="#">Pricing</a></li>
+						<li class="item standard-description"><a href="#">Blog</a></li>
+					</ul>
 					<div class="d-flex right-snippet">
-						<a href="#" class="standard-text d-none d-sm-flex">login</a>
-						<a href="#" class="button standard-indent blue-button standard d-none d-sm-flex">get started</a>
+						<a href="#" class="standard-text d-none d-sm-flex">Login</a>
+						<a href="#" class="button roboto standard-indent light-pink oval standard d-none d-sm-flex flex-row align-items-center">Sign Up</a>
 						<a class="navi-hamburger">
 							<span class="top"></span>
 							<span></span>
 							<span class="bottom"></span>
 						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="bottom-header-line">
-		<div class="container-fluid container-xl">
-			<div class="row">
-				<div class="col-12">
-					<div class="wrapper-content">
-						<ul class="">
-							<li><a class="standard-text" href="#">All templates</a></li>
-							<li><a class="standard-text" href="#">Timeline</a></li>
-							<li><a class="standard-text" href="#">SWOT</a></li>
-							<li><a class="standard-text" href="#">Roadmap</a></li>
-							<li><a class="standard-text" href="#">Process</a></li>
-							<li><a class="standard-text" href="#">Marketing</a></li>
-							<li><a class="standard-text" href="#">Goals</a></li>
-							<li><a class="standard-text" href="#">Education</a></li>
-							<li><a class="standard-text" href="#">Pricing Table</a></li>
-							<li><a class="standard-text" href="#">Dashboards</a></li>
-						</ul>
 					</div>
 				</div>
 			</div>
@@ -144,16 +123,19 @@
 <!--End for mobile menu-->
 
 <section class="section main-banner">
-	<div class="block-for-snippet-top"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<div class="wrapper-content">
-					<h1 class="color-dark-blue main-title">Create impactful Presentations
-						with our editable infographic
-						slides and templates</h1>
-					<p class="section__section-description color-dark-gray">Get unlimited access to our ever-growing library of 750+ slides, templates and Infographics.</p>
-					<a href="#" class="d-inline-flex button standard-indent blue-button standard">get started</a>
+				<div class="section__wrapper-content left-indent d-flex justify-content-between">
+					<div class="section__text-container d-flex">
+						<h1 class="color-dark-blue main-title gilroy-extra-bold">Impactful <span class="underline-block">Presentations.</span> Made Faster.</h1>
+						<img src="img/main-underline-img.png" alt="" class="underline-block d-lg-none">
+						<p class="section__section-description color-gray">SlideKit combines with Google Slides to help bring your stories to life by creating stunning presentations in minutes.</p>
+						<a href="#" class="d-inline-flex button standard-indent red-button oval standard d-flex flex-row align-items-center">Get Started</a>
+					</div>
+					<div class="section__img-wrapper">
+						<img src="img/main-laptop-bg.png" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -161,31 +143,41 @@
 	<div class="block-for-snippet-center-bottom"></div>
 </section>
 
-<section class="section">
+<section class="section benefits">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-12 col-xl-10">
-				<h3 class="section__section-title text-center color-black-gray">Compatible with your Favorite App</h3>
-				<p class="section__section-description text-center color-dark-gray">All our slides are compatible with PowerPoint, Keynote and Google slides; allowing you to insert the template and instantly customize them according to your needs.</p>
-			</div>
-			<div class="col-12">
-				<div class="white-tile-blocks">
-					<div class="white-tile-blocks__wrapper">
-						<div class="white-tile-blocks__body">
-							<img class="white-tile-blocks__body__img-block" src="img/powerpoint_icon.svg" alt="">
-							<h4 class="section__section-small-title color-dark-blue">Microsoft PowerPoint</h4>
-						</div>
+			<div class="col-12 col-md-11 col-xl-12">
+				<div class="tile-color">
+					<div class="text-block">
+						<h5 class="section__section-subtitle text-center text-uppercase">What we do</h5>
+						<h3 class="section__section-title text-center color-black-gray">Use SlideKit to drive growth at your business.</h3>
+						<img src="img/common-underline-img.png" alt="" class="common-underline">
 					</div>
-					<div class="white-tile-blocks__wrapper">
-						<div class="white-tile-blocks__body">
-							<img class="white-tile-blocks__body__img-block" src="img/tablet-holder-icon.svg" alt="">
-							<h4 class="section__section-small-title color-dark-blue">Keynote</h4>
+					<div class="white-tile-blocks">
+						<div class="white-tile-blocks__wrapper snippet-triangle">
+							<div class="white-tile-blocks__body">
+								<h4 class="section__section-small-description">STEP</h4>
+								<h4 class="white-tile-blocks__body__count">01</h4>
+								<h3 class="section__section-small-title gilroy-extra-bold">Get add-on in Google Workspace Marketplace</h3>
+								<p class="white-tile-blocks__body__description roboto">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+								<a href="#" class="white-tile-blocks__body__description section-button">Install now</a>
+							</div>
 						</div>
-					</div>
-					<div class="white-tile-blocks__wrapper">
-						<div class="white-tile-blocks__body">
-							<img class="white-tile-blocks__body__img-block" src="img/google-slides-icon.svg" alt="">
-							<h4 class="section__section-small-title color-dark-blue">Google Slides</h4>
+						<div class="white-tile-blocks__wrapper">
+							<div class="white-tile-blocks__body">
+								<h4 class="section__section-small-description">STEP</h4>
+								<h4 class="white-tile-blocks__body__count">02</h4>
+								<h3 class="section__section-small-title gilroy-extra-bold">Start the Slidekit from Addon Menu</h3>
+								<p class="white-tile-blocks__body__description roboto">Go to Add-ons > SlideKit Templates > Start</p>
+							</div>
+						</div>
+						<div class="white-tile-blocks__wrapper snippet-circle">
+							<div class="white-tile-blocks__body">
+								<h4 class="section__section-small-description">STEP</h4>
+								<h4 class="white-tile-blocks__body__count">03</h4>
+								<h3 class="section__section-small-title gilroy-extra-bold">Search for the Template and Redesign it</h3>
+								<p class="white-tile-blocks__body__description roboto">Search, Insert and Redesign and Present</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -193,6 +185,130 @@
 		</div>
 	</div>
 </section>
+
+<section class="section pressed-img">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 position-initial">
+				<div class="section__wrapper-content left-indent d-flex justify-content-between">
+					<div class="section__text-container d-flex order-2 order-lg-1">
+						<h1 class="section__section-title-bigger color-black-gray gilroy-extra-bold"><span class="underline-block">One Presentation...</span> One open tab.</h1>
+<!--						<img src="img/main-underline-img.png" alt="" class="underline-block-under d-lg-none">-->
+						<p class="section__section-description-bigger color-gray">Slidekit makes sure you have everything you need inside your Google Slides tab itself. Search and import visualizations without ever leaving Google Slides.</p>
+						<a href="#" class="d-inline-flex section__section-button button standard-indent red-button oval standard d-flex flex-row align-items-center">Install Now</a>
+					</div>
+					<div class="section__img-wrapper-pressed section__img-wrapper order-1 order-lg-2">
+						<img src="img/main-laptop-bg-section.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="block-for-snippet-center-bottom"></div>
+</section>
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section__wrapper-content right-indent d-flex justify-content-between">
+					<div class="section__img-wrapper">
+						<img src="img/main-laptop-bg-section-second.png" alt="">
+					</div>
+					<div class="section__text-container d-flex">
+						<h1 class="section__section-title-bigger color-black-gray gilroy-extra-bold"><span class="underline-block">Don't reinvent.</span>Retheme it.</h1>
+						<!--						<img src="img/main-underline-img.png" alt="" class="underline-block-under d-lg-none">-->
+						<p class="section__section-description-bigger color-gray">With our huge collection of 4500+ infographics templates and google slides themes, you will never have to start from scratch again. Download the best slide and make them better.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="block-for-snippet-center-bottom"></div>
+</section>
+
+<section class="section our-clients">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-11">
+				<h3 class="section__section-middle-title gilroy-extra-bold color-black-gray text-center">Loved by <span class="color-light-red">6,000+ Client</span> around the world</h3>
+				<ul class="logo-items">
+					<li><img src="img/vmware-logo.png" alt=""></li>
+					<li><img src="img/infosys-logo.png" alt=""></li>
+					<li><img src="img/pepsico-logo.png" alt=""></li>
+					<li><img src="img/unsplash-logo.png" alt=""></li>
+					<li><img src="img/wipro-logo.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section feedbacks biggest-bottom-indent">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 position-initial d-flex flex-row justify-content-end">
+				<div class="section__wrapper-content left-indent d-flex justify-content-between">
+					<div class="section__img-wrapper-pressed section__img-wrapper order-1 order-lg-2">
+						<h3 class="section__section-title color-black-gray"><span class="replace">What’s</span> Our Client Say About Us.</h3>
+					</div>
+				</div>
+				<div class="section__wrapper-carousel">
+					<div class="feedback-carousel-wrapper">
+						<div class="feedback-carousel">
+							<div class="item">
+								<div class="item-body">
+									<div class="snippet-block">
+										<img src="img/brakets-snippet.png" alt="">
+									</div>
+									<div class="top-block">
+										<h4 class="title color-dark-gray">Eric Toonen</h4>
+										<span class="subtitle">Business Analyst</span>
+									</div>
+									<p class="description color-dark-gray">I absolutely love the slides Slideheap have created. Best part is they continue to come out with new updates and downloads at no extra cost!</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="item-body">
+									<div class="snippet-block">
+										<img src="img/brakets-snippet.png" alt="">
+									</div>
+									<div class="top-block">
+										<h4 class="title color-dark-gray">Eric Toonen</h4>
+										<span class="subtitle">Business Analyst</span>
+									</div>
+									<p class="description color-dark-gray">I absolutely love the slides Slideheap have created. Best part is they continue to come out with new updates and downloads at no extra cost!</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="item-body">
+									<div class="snippet-block">
+										<img src="img/brakets-snippet.png" alt="">
+									</div>
+									<div class="top-block">
+										<h4 class="title color-dark-gray">Eric Toonen</h4>
+										<span class="subtitle">Business Analyst</span>
+									</div>
+									<p class="description color-dark-gray">I absolutely love the slides Slideheap have created. Best part is they continue to come out with new updates and downloads at no extra cost!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slick-arrow-wrapper">
+						<div id="slick-prev" class="arrow-item arrow-slick">
+							<img src="img/arrow-left.svg" alt="">
+						</div>
+						<div id="slick-next" class="arrow-item arrow-slick">
+							<img src="img/arrow-right.svg" alt="" class="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
 <section class="section how-it-works text-center">
 	<div class="container">
 		<div class="row justify-content-center">
@@ -372,66 +488,7 @@
 		</div>
 	</div>
 </section>
-<section class="section feedbacks biggest-bottom-indent snippet">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-lg-10 col-xl-5">
-				<h3 class="section__section-middle-title color-dark-gray">Check testimonials for our satisfied clients</h3>
-				<p class="section__section-middle-description color-dark-gray">Customer satisfaction matters even more than price because that’s what drives us to create better products. Creating high-quality templates for better user experience is a significant factor in keeping our customers at anchor. Let’s look at what our beloved customers have to say about us!</p>
-			</div>
-			<div class="col-11 col-sm-12 col-lg-9 col-xl-7">
-				<div class="feedback-carousel-wrapper">
-					<div class="feedback-carousel">
-						<div class="item">
-							<div class="item-body">
-								<div class="snippet-block">
-									<img src="img/brakets-snippet.png" alt="">
-								</div>
-								<div class="top-block">
-									<h4 class="title color-dark-gray">Eric Toonen</h4>
-									<span class="subtitle">Business Analyst</span>
-								</div>
-								<p class="description color-dark-gray">I absolutely love the slides Slideheap have created. Best part is they continue to come out with new updates and downloads at no extra cost!</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="item-body">
-								<div class="snippet-block">
-									<img src="img/brakets-snippet.png" alt="">
-								</div>
-								<div class="top-block">
-									<h4 class="title color-dark-gray">Eric Toonen</h4>
-									<span class="subtitle">Business Analyst</span>
-								</div>
-								<p class="description color-dark-gray">I absolutely love the slides Slideheap have created. Best part is they continue to come out with new updates and downloads at no extra cost!</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="item-body">
-								<div class="snippet-block">
-									<img src="img/brakets-snippet.png" alt="">
-								</div>
-								<div class="top-block">
-									<h4 class="title color-dark-gray">Eric Toonen</h4>
-									<span class="subtitle">Business Analyst</span>
-								</div>
-								<p class="description color-dark-gray">I absolutely love the slides Slideheap have created. Best part is they continue to come out with new updates and downloads at no extra cost!</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="slick-arrow-wrapper">
-					<div id="slick-prev" class="arrow-item arrow-slick">
-						<img src="img/arrow-left.svg" alt="">
-					</div>
-					<div id="slick-next" class="arrow-item arrow-slick">
-						<img src="img/arrow-right.svg" alt="" class="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+
 <section class="section p-0 round-snippet-banner">
 	<div class="container-fluid container-xl">
 		<div class="row">

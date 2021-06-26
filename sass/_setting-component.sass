@@ -10,36 +10,83 @@
     color: $dark-gray
 .color-white
     color: $white-color
+.color-black
+    color: $black-color
+.color-gray
+    color: $gray-color
+.color-light-red
+    color: $light-red
 
 .white-bg
     background-color: $white-color
 
+.text-uppercase
+    text-transform: uppercase
 .text-center
     text-align: center
+.position-initial
+    position: initial
+
+.roboto
+    font-family: $Roboto
+.gilroy-extra-bold
+    font-family: $Gilroy-ExtraBold
+
+.standard-description
+    font-size: 18px
 
 .section
     padding: 60px 0 80px
     &.biggest-bottom-indent
         padding-bottom: 240px
+    &.pressed-img
+        position: relative
+        .section__text-container
+            min-height: 750px
+    &__section-subtitle
+        font-size: 20px
+        font-weight: 400
     &__section-title
-        font-size: 50px
-        line-height: 72px
-        font-weight: 600
+        font-size: 58px
+        line-height: 64px
+        font-weight: 800
+    &__section-title-bigger
+        font-size: 60px
+        line-height: 75px
+        font-weight: 800
         &.reduce-line-height
             line-height: 59px
+        .underline-block
+            position: relative
+            display: flex
+            &::after
+                content: ""
+                position: absolute
+                background-image: url("../img/main-underline-bigger-img.png")
+                background-size: contain
+                background-repeat: no-repeat
+                left: 0px
+                bottom: -18px
+                height: 25px
+                width: 85%
     &__section-middle-title
         font-size: 40px
         line-height: 60px
         font-weight: 600
     &__section-small-title
-        font-size: 27px
-        line-height: 40px
-        font-weight: 600
-    &__section-description
-        font-size: 18px
+        font-size: 24px
+        line-height: 28px
         font-weight: 400
-        line-height: 27px
-        margin-top: 10px
+    &__section-description
+        font-size: 28px
+        font-weight: 400
+        line-height: 36px
+        margin-top: 30px
+    &__section-description-bigger
+        font-size: 30px
+        font-weight: 400
+        line-height: 40px
+        margin-top: 30px
         &.increases-line-height
             line-height: 32px
     &__section-middle-description
@@ -49,16 +96,54 @@
         font-weight: 400
     &__section-small-description
         font-size: 15px
+        font-weight: 400
+        color: #666666
+    &__section-button
+        margin-top: 40px
     &__middle-b-indent
         margin-bottom: 30px
+    &__wrapper-content
+        flex-direction: row
+        &.left-indent
+            padding-left: 70px
+        &.right-indent
+            .section__text-container
+                padding-left: 40px
+    &__text-container
+        flex-direction: column
+        justify-content: center
+        align-items: start
+        width: 100%
+        max-width: 560px
+    &__img-wrapper-pressed
+        position: absolute
+        right: 0
+    .underline-block-under
+        width: 55%
 
 .main-title
-    font-size: 54px
-    line-height: 72px
-    font-weight: 600
+    font-size: 80px
+    line-height: 88px
+    font-weight: 800
     text-align: left
+    color: $black-gray
+    margin-top: 20px
     &.text-center
         text-align: center
+    .underline-block
+        position: relative
+        display: inline-flex
+        &::after
+            content: ""
+            position: absolute
+            background-image: url("../img/main-underline-img.png")
+            background-size: contain
+            background-repeat: no-repeat
+            left: 10px
+            bottom: -15px
+            height: 25px
+            width: 100%
+
 
 
 .white-bg-tile
