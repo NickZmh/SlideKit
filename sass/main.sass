@@ -333,12 +333,12 @@ header
 			display: flex
 			flex-wrap: wrap
 			justify-content: center
-			padding-top: 20px
+			padding-top: 28px
 			.button
 				width: 100%
 				max-width: 360px
 				//max-width: 50%
-				margin: 0px 20px 15px
+				margin: 0px 20px 20px
 				&.b-line
 					border: 1px solid $dark-gray
 
@@ -349,18 +349,6 @@ header
 .main-banner
 	position: relative
 	padding: 40px 0 60px
-	//&::before
-	//	content: ""
-	//	position: absolute
-	//	z-index: -1
-	//	top: 0
-	//	right: 0
-	//	background-image: url('../img/main-banner-background-img.png')
-	//	background-repeat: no-repeat
-	//	background-position: top right
-	//	background-size: contain
-	//	height: 100%
-	//	width: 1000px
 	&::after
 		content: ''
 		position: absolute
@@ -387,18 +375,6 @@ header
 			z-index: -1
 		img
 			z-index: 150
-	//.block-for-snippet-center-bottom
-	//	position: absolute
-	//	bottom: 200px
-	//	left: 40vw
-	//	&::before
-	//		content: ""
-	//		position: absolute
-	//		background-image: url("../img/violet-triangle-snippet.png")
-	//		background-repeat: no-repeat
-	//		background-size: contain
-	//		width: 213px
-	//		height: 186px
 	.section__section-description
 		margin-top: 25px
 	.wrapper-content
@@ -416,6 +392,8 @@ header
 		.section__section-title
 			font-size: 50px
 			line-height: 58px
+		.content-block
+			max-width: 920px
 	.content-block
 		display: flex
 		flex-direction: column
@@ -681,10 +659,10 @@ header
 			color: #000000
 			margin-bottom: 25px
 
+.text-snippet
+	padding-top: 20px
 
 .round-snippet-banner
-	.width-set
-		padding: 0 30px
 	.banner
 		&__wrapper
 			position: relative
@@ -893,6 +871,7 @@ header
 				border-radius: 5px
 .product-top-slider-wrapper
 	position: relative
+	padding: 0 7px
 	.arrow-item
 		position: absolute
 		top: calc(50% - 19px)
@@ -905,7 +884,7 @@ header
 		height: 38px
 		background-color: $white-color
 		border-radius: 50%
-		box-shadow:  0px 3px 3px rgba(0, 22, 60, 0.15)
+		//box-shadow:  0px 3px 3px rgba(0, 22, 60, 0.15)
 		cursor: pointer
 		margin: 2px 0 5px
 		z-index: 20
@@ -929,7 +908,7 @@ header
 	display: flex
 	flex-direction: row
 	justify-content: center
-	margin-top: 20px
+	margin-top: 15px
 	height: 90px
 	.product-bottom-slider
 		height: 100%
@@ -944,7 +923,7 @@ header
 					.item
 						.img-wrapper
 							img
-								border: .5px solid 
+								border: .5px solid #f3904f
 	.slider-box
 		width: 100%
 		margin: 0 -24px
@@ -953,134 +932,55 @@ header
 		padding: 2px 7px 5px
 		display: flex!important
 		height: 100%
+		border: .5px solid transparent
 		.img-wrapper
 			cursor: pointer
 			img
 				width: 100%
 				height: 100%
 				object-fit: cover
-				box-shadow: 0px 3px 3px rgba(0, 22, 60, 0.15)
-				border-radius: 7px
+				//box-shadow: 0px 3px 3px rgba(0, 22, 60, 0.15)
+				border-radius: 5px
 
 
-
-
-
-.how-it-works
-	position: relative
-	&::before
-		content: ''
-		position: absolute
-		top: 50px
-		left: 7vw
-		width: 126px
-		height: 121px
-		background-image: url("../img/orange-ball.png")
-		background-repeat: no-repeat
-		background-size: contain
-		z-index: -1
-	&::after
-		content: ''
-		position: absolute
-		top: 250px
-		right: 7vw
-		width: 147px
-		height: 121px
-		background-image: url("../img/gold-part-snippet.png")
-		background-repeat: no-repeat
-		background-size: contain
-		z-index: -1
-	.main-img
+.product-context
+	&__title
+		font-size: 28px
+		line-height: 34px
 		margin-top: 60px
+		margin-bottom: 40px
+		line-height: 34px
+	&__description
+		font-size: 20px
+		line-height: 37px
+		font-weight: 400
+		color: #424242
+		text-align: justify
+		&.indent
+			margin-bottom: 40px
+		.word-break
+			display: flex
+			flex-direction: row
+			justify-content: center
 
-.feature-section+.feature-section
-	padding-top: 0
-.feature-section
-	position: relative
-	&.one-snippet
-		&::after
-			content: ''
-			position: absolute
-			top: 240px
-			right: 2vw
-			width: 190px
-			height: 190px
-			background-image: url("../img/square-green-snippet.png")
-			background-repeat: no-repeat
-			background-size: contain
-			z-index: -1
-	&.two-snippets
-		&::before
-			content: ''
-			position: absolute
-			top: -110px
-			left: 4vw
-			width: 190px
-			height: 190px
-			background-image: url("../img/violet-3d-triangle-snippet.png")
-			background-repeat: no-repeat
-			background-size: contain
-			z-index: -1
-		&::after
-			content: ''
-			position: absolute
-			bottom: 80px
-			right: 8vw
-			width: 120px
-			height: 120px
-			background-image: url("../img/gold-triangle-snippet.png")
-			background-repeat: no-repeat
-			background-size: contain
-			z-index: -1
-	.wrapper-content
-		height: 100%
-		display: flex
-		flex-direction: column
-		justify-content: center
-		align-items: flex-start
-	.section__section-description
-		margin: 34px 0
+
+.main-common-banner
+	&.templates
+		.content-block
+			max-width: 720px
+			.underline-block
+				width: 50%
+		.main-title
+			margin-bottom: 10px
+		.section__section-description
+			margin-top: 30px!important
+
+
 
 .templates-example
-	padding-top: 120px
+	padding-top: 0
 	position: relative
 	z-index: 1
-	&.snippet
-		&::before
-			content: ''
-			position: absolute
-			top: 50%
-			left: 2vw
-			width: 190px
-			height: 190px
-			background-image: url("../img/gold-part-snippet-2.png")
-			background-repeat: no-repeat
-			background-size: contain
-			z-index: -1
-		&::after
-			content: ''
-			position: absolute
-			bottom: -30px
-			right: 12vw
-			width: 160px
-			height: 160px
-			background-image: url("../img/ring-blue-snippet.png")
-			background-repeat: no-repeat
-			background-size: contain
-			z-index: -1
-		.snippet-block
-			position: relative
-			&::before
-				content: ''
-				position: absolute
-				top: 400px
-				right: 2vw
-				width: 100px
-				height: 120px
-				background-image: url("../img/pink-3d-triangle-snippet.png")
-				background-repeat: no-repeat
-				background-size: contain
-				z-index: -1
 	.templates-tile
 		&__list
 			margin-top: 90px
@@ -1088,13 +988,15 @@ header
 			flex-direction: row
 			justify-content: flex-start
 			flex-wrap: wrap
-			margin-left: -30px
-			margin-right: -30px
+			margin-left: -20px
+			margin-right: -20px
+			width: 100%
+			max-width: 1200px
 		&__wrapper
 			width: 33%
-			min-width: 390px
-			padding: 0 30px
-			margin-bottom: 75px
+			min-width: 400px
+			padding: 0 20px
+			margin-bottom: 50px
 			.snippet-text
 				text-align: center
 				margin-top: 15px
@@ -1103,44 +1005,37 @@ header
 				line-height: 26px
 		&__body
 			background-color: $white-color
-			box-shadow: 0px 3px 3px rgba(37, 117, 252, 0.15)
+			box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.05)
 			border-radius: 5px
-			padding: 8px 6px 12px 6px
+			border: 1px solid rgb(240, 240, 240)
+			padding: 20px 20px
 			img
 				display: block
+				border-radius: 5px
+				width: 100%
+			.bottom-content
+				padding: 25px 0 20px 0
+				min-height: 200px
+				.subtitle
+					color: #666666
+					font-size: 16px
+					font-weight: 400
+					margin-bottom: 6px
+				.title
+					font-size: 29px
+					line-height: 35px
+			.link
+				text-transform: uppercase
+				font-size: 15px
+				img
+					width: initial
+
 	.button-wrapper
 		margin-top: 10px
 
-.blue-banner-background
-	position: relative
-	height: 600px
-	background-image: url("../img/banner-background.jpg")
-	background-size: cover
-	background-repeat: no-repeat
-	background-position: center
-	padding-bottom: 0
-	.section__section-description
-		max-width: 790px
-	.img-block
-		position: absolute
-		width: 100%
-		height: 50%
-		bottom: 0
-		object-fit: cover
+	.text-snippet
+		padding: 50px 0 100px 0
 
-
-
-
-
-.blue-bg-banner
-	display: flex
-	flex-direction: column
-	justify-content: center
-	align-items: center
-	min-height: 430px
-	background-image: url("../img/blue-bg-banner.png")
-	background-repeat: no-repeat
-	background-size: cover
 
 .accordion
 	display: flex

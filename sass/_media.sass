@@ -29,19 +29,8 @@
 				width: 120px
 				height: 120px
 
-	.prices
-		&.snippet
-			&::before
-				width: 120px
-				left: 2vw
-				top: 35%
-			&::after
-				width: 120px
-			.snippet-block
-				&::before
-					width: 120px
-					top: 280px
-					right: 0vw
+	.product-context__description .word-break
+		display: inline-flex
 
 @media only screen and (max-width : 1400px)
 
@@ -106,6 +95,13 @@
 			font-size: 44px
 			line-height: 54px
 
+	.product-context__title
+		font-size: 26px!important
+		font-weight: 800
+	.product-context__description
+		font-size: 18px
+		line-height: 35px
+
 	.how-it-works
 		&::before
 			left: 2vw
@@ -123,6 +119,16 @@
 			img
 				width: 20px
 
+@media only screen and (max-width : 1250px)
+	.templates-example
+		.templates-tile__list
+			max-width: 800px
+		.templates-tile__body
+			padding: 18px
+			.bottom-content
+				.title
+					font-size: 26px
+					line-height: 32px
 @media only screen and (max-width : 1200px)
 
 	.section
@@ -192,7 +198,9 @@
 				height: 150px
 		.section__text-container
 			max-width: 380px
-
+	.main-common-banner
+		.main-title
+			margin-top: 0px
 	.benefits
 		&::after
 			width: 70px
@@ -281,23 +289,26 @@
 			text-align: center
 
 	.templates-example
-		padding-top: 80px
 		.templates-tile__list
 			margin-top: 60px
+			max-width: 915px
 			//justify-content: center
 			margin-left: -15px
 			margin-right: -15px
 		.templates-tile__wrapper
-			margin-bottom: 50px
+			margin-bottom: 30px
 			min-width: 305px
 			padding: 0 15px
-	.templates-example
-		&.snippet
-			&::after
-				right: 8px
-				width: 120px
-			&::before
-				width: 130px
+		.templates-tile__body
+			padding: 15px
+			.bottom-content
+				padding: 20px 0 20px 0
+				min-height: 175px
+				.subtitle
+					margin-bottom: 5px
+				.title
+					font-size: 22px
+					line-height: 27px
 
 
 
@@ -308,9 +319,7 @@
 			img
 				width: 12px
 
-	.section
-		&.product-context
-			padding-top: 30px
+
 	.product-context
 		.side-bar
 			min-width: 300px
@@ -349,9 +358,10 @@
 		//font-size: 42px
 		//line-height: 56px
 		text-align: center
-		.underline-block
+		.underline-block-after
 			&::after
 				width: 0
+
 	.main-banner
 		padding: 80px 0 80px
 		.section__section-description
@@ -365,7 +375,17 @@
 			max-width: 580px
 			.underline-block
 				width: 50%
+	.main-common-banner
+		&.short-size
+			.content-block
+				.section__section-title
+					font-size: 40px
+					line-height: 54px
 	.section
+		&.main-banner
+			.section__text-container
+				max-width: 620px!important
+				margin-bottom: 40px
 		&__section-title
 			font-size: 40px
 			line-height: 54px
@@ -460,6 +480,14 @@
 				font-size: 28px
 
 
+	.product-context__title
+		font-size: 24px!important
+		line-height: 32px
+		font-weight: 800
+	.product-context__description
+		font-size: 17px
+		line-height: 34px
+
 	.how-it-works
 		&::before
 			width: 90px
@@ -486,7 +514,6 @@
 			margin: 10px 0 30px 0
 
 	.templates-example
-		padding-top: 60px
 		.templates-tile__list
 		.templates-tile__wrapper
 			max-width: 50%
@@ -496,6 +523,8 @@
 			.snippet-block
 				&::before
 					top: 180px
+
+
 	.prices
 		.prices-tiles-wrapper
 			.prices-tiles__item
@@ -549,11 +578,7 @@
 			margin: 0 -7px
 		.item
 			padding: 2px 7px 5px
-		.arrow-item
-			&#slick-prev
-				margin-right: 14px
-			&#slick-next
-				margin-left: 14px
+
 
 	.product-context
 		.content-wrapper
@@ -659,6 +684,11 @@
 				height: 150px
 		.section__text-container .underline-block
 			display: initial
+	.main-common-banner
+		&.short-size
+			.content-block
+				.section__section-title
+					font-size: 30px
 	.benefits
 		&::after
 			width: 50px
@@ -787,6 +817,18 @@
 					.section__section-middle-description
 						margin-top: 20px
 
+
+	.product-context__title
+		font-size: 22px!important
+		line-height: 30px
+		font-weight: 800
+		margin-top: 50px
+		margin-bottom: 30px
+	.product-context__description
+		font-size: 16px
+		line-height: 32px
+
+
 	.how-it-works
 		&::before
 			width: 90px
@@ -795,8 +837,14 @@
 	.templates-example
 		.templates-tile__list
 			margin-top: 40px
+			align-items: center
+			justify-content: center
+		.templates-tile__body
+			padding: 20px
 		.templates-tile__wrapper
 			margin-bottom: 35px
+			width: 100%
+			max-width: 440px
 			.snippet-text
 				margin-top: 10px
 		.button-wrapper
@@ -871,29 +919,6 @@
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width : 600px)
-	//.feedbacks
-	//	.feedback-carousel-wrapper
-	//		.feedback-carousel
-	//			.item
-	//				.item-body
-	//					padding: 30px 30px 35px
-	//					.snippet-block
-	//						left: initial
-	//						right: 30px
-	//					.top-block
-	//						width: 100%
-	//					.description
-	//						font-size: 16px
-	//						line-height: 28px
-	//	.slick-arrow-wrapper
-	//		.arrow-item
-	//			top: 50%
-	//			width: 40px
-	//			height: 40px
-	//			&#slick-prev
-	//				left: -25px
-	//			&#slick-next
-	//				right: -10px
 
 	.round-snippet-banner .width-set
 		padding: 0 15px
@@ -914,20 +939,35 @@
 	.section
 		.section__text-container
 			max-width: 420px!important
-
+		&.main-banner
+			.section__text-container
+				margin-bottom: 35px
 	.main-title
 		text-align: center
-		font-size: 31px
+		font-size: 30px
 		line-height: 41px
 	.main-common-banner
 		.content-block
 			max-width: 350px
 		.main-title
 			margin-top: 20px
-			font-size: 31px
+			font-size: 30px
 			line-height: 41px
 		.common-underline
 			width: 80%
+		&.short-size
+			.section__section-middle-description
+				margin-top: 20px
+			.content-block
+				.section__section-title
+					margin-top: 20px
+		&.templates
+			.main-title
+				margin-bottom: 5px
+			.section__section-description
+				margin-top: 20px!important
+	.white-bg-tile
+		padding-top: 15px
 	.section
 		padding: 35px 0 45px 0
 		//&__section-title
@@ -939,6 +979,8 @@
 			padding-top: 50px
 		&.our-clients
 			padding: 40px 0
+		&.templates-example
+			padding-top: 25px
 		&__section-small-title
 			font-size: 20px
 			line-height: 28px
@@ -947,7 +989,7 @@
 		&.main-banner
 			padding: 35px 0 60px 0
 	.section__img-wrapper
-		margin-bottom: 15px
+		margin-bottom: 20px
 	.section__section-title-bigger
 		.underline-block
 			&::after
@@ -974,6 +1016,8 @@
 			text-align: center
 		.button
 			margin-top: 30px
+		.section__section-description
+			margin-top: 20px!important
 	.white-tile-blocks
 		margin-top: 50px
 	.white-tile-blocks__wrapper
@@ -1109,6 +1153,27 @@
 	.prices
 		padding: 35px 0 80px 0
 
+	.product-top-slider-wrapper
+		.arrow-item
+			width: 28px
+			height: 28px
+			img
+				width: 10px
+			&#slick-next
+				right: 12px
+			&#slick-prev
+				left: 12px
+	.product-bottom-slider-wrapper
+		margin-top: 10px
+
+
+	.product-context__title
+		margin-top: 50px
+		margin-bottom: 30px
+	.product-context__description
+		line-height: 30px
+		&.indent
+			margin-bottom: 30px
 
 	.feature-section
 		&.one-snippet
@@ -1132,12 +1197,22 @@
 	.templates-example
 		.templates-tile__list
 			justify-content: center
+			width: initial
 		.templates-tile__wrapper
 			width: 100%
-			max-width: 320px
+			max-width: 380px
 			min-width: initial
-
-
+		.templates-tile__body
+			padding: 15px
+			.bottom-content
+				.subtitle
+					font-size: 15px
+				.title
+					font-size: 20px
+			.link
+				font-size: 15px
+		.text-snippet
+			padding: 40px 0 80px
 
 	.accordion
 		.a-container

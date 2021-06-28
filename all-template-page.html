@@ -8,7 +8,7 @@
 
 	<meta charset="utf-8">
 
-	<title>SliderHeap</title>
+	<title>SliderKit</title>
 	<meta name="description" content="">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -37,52 +37,30 @@
 <body>
 
 
-<header class="non-box-shadow">
+<header>
 	<div class="top-header">
 		<div class="container-fluid container-xl">
 			<div class="row">
 				<div class="col-12 wrapper-content">
 					<div class="d-flex left-snippet">
-						<a href="#" class="logo d-flex">
-							<img src="img/header-logo.svg" alt="">
+						<a href="index.html" class="logo d-flex">
+							<img src="img/logo.png" alt="">
 						</a>
-						<div class="input-wrapper d-none d-lg-flex">
-							<input type="text" class="standard-input">
-							<button class="search-button" type="submit">
-								<img src="img/search-icon.svg" alt="">
-							</button>
-						</div>
 					</div>
+					<ul class="nav-menu d-flex">
+						<li class="item standard-description"><a href="all-template-page.html">Templates</a></li>
+						<li class="item standard-description"><a href="product-page.html">Support</a></li>
+						<li class="item standard-description"><a href="pricing-page.html">Pricing</a></li>
+						<li class="item standard-description"><a href="#">Blog</a></li>
+					</ul>
 					<div class="d-flex right-snippet">
-						<a href="#" class="standard-text d-none d-sm-flex">login</a>
-						<a href="#" class="button standard-indent blue-button standard d-none d-sm-flex">get started</a>
+						<a href="#" class="standard-text d-none d-sm-flex">Login</a>
+						<a href="#" class="button roboto standard-indent light-pink oval standard d-none d-sm-flex flex-row align-items-center">Sign Up</a>
 						<a class="navi-hamburger">
 							<span class="top"></span>
 							<span></span>
 							<span class="bottom"></span>
 						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="bottom-header-line">
-		<div class="container-fluid container-xl">
-			<div class="row">
-				<div class="col-12">
-					<div class="wrapper-content">
-						<ul class="">
-							<li><a class="standard-text" href="#">All templates</a></li>
-							<li><a class="standard-text" href="#">Timeline</a></li>
-							<li><a class="standard-text" href="#">SWOT</a></li>
-							<li><a class="standard-text" href="#">Roadmap</a></li>
-							<li><a class="standard-text" href="#">Process</a></li>
-							<li><a class="standard-text" href="#">Marketing</a></li>
-							<li><a class="standard-text" href="#">Goals</a></li>
-							<li><a class="standard-text" href="#">Education</a></li>
-							<li><a class="standard-text" href="#">Pricing Table</a></li>
-							<li><a class="standard-text" href="#">Dashboards</a></li>
-						</ul>
 					</div>
 				</div>
 			</div>
@@ -94,124 +72,239 @@
 <div class="nav-mobile">
 	<div id="collapse">
 		<ul>
-			<li class="first-item-menu custom-search">
-				<div class="input-wrapper d-flex">
-					<input type="text" class="standard-input">
-					<button class="search-button" type="submit">
-						<img src="img/search-icon.svg" alt="">
-					</button>
-				</div>
+			<li class="first-item-menu">
+				<a href="all-template-page.html" class="link"><span>Templates</span></a>
 			</li>
 			<li class="first-item-menu">
-				<a href="#" class="link"><span>All templates</span></a>
+				<a href="product-page.html" class="link"><span>Support</span></a>
 			</li>
 			<li class="first-item-menu">
-				<a href="#" class="link"><span>Timeline</span></a>
+				<a href="pricing-page.html" class="link"><span>Pricing</span></a>
 			</li>
 			<li class="first-item-menu">
-				<a href="#" class="link"><span>SWOT</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Roadmap</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Process</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Marketing</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Goals</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Education</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Pricing Table</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Dashboards</span></a>
+				<a href="#" class="link"><span>Blog</span></a>
 			</li>
 		</ul>
 		<div class="button-wrapper">
-			<a href="#" class="button d-sm-none b-line standard-text standard-indent color-dark-gray standard">login</a>
-			<a href="#" class="button d-sm-none d-inline-flex standard-indent blue-button standard">get started</a>
+			<a href="#" class="button roboto standard-indent oval red-button standard d-inline-flex d-sm-none flex-row align-items-center">Login</a>
+			<a href="#" class="button roboto standard-indent light-pink oval standard d-inline-flex d-sm-none flex-row align-items-center">Sign Up</a>
 		</div>
 	</div>
 </div>
 <!--End for mobile menu-->
 
 
-<section class="section blue-bg-banner">
+<section class="section main-common-banner templates">
 	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<h3 class="main-title color-white text-center">Templates</h3>
-				<p class="section__section-description color-white text-center">Slideheap offers the widest range of presentation templates that are perfect for modern and sophisticated presentations. This professional design covers every topic starting from playful and creative to formal business presentations. Simply pick the best and most powerful template design and you are ready to rock your audience sitting out there in seats.</p>
+		<div class="row justify-content-center">
+			<div class="col-12 d-flex flex-column align-items-center justify-content-center">
+				<div class="content-block">
+					<h3 class="main-title color-black-gray text-center gilroy-extra-bold">Templates</h3>
+					<img src="img/main-underline-img.png" alt="" class="underline-block">
+					<p class="section__section-description color-gray text-center">You are one step away from getting access to our entire collection of infographics plus all future updates.</p>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
-
-<section class="section templates-example">
+<section class="section templates-example biggest-bottom-indent">
 	<div class="snippet-block"></div>
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-12">
+			<div class="col-12 d-flex flex-column align-items-center">
 				<div class="templates-tile__list mt-0">
 					<div class="templates-tile__wrapper">
 						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
+							<img src="img/tile-bg.png" alt="">
+							<div class="bottom-content">
+								<div class="content">
+									<h5 class="subtitle roboto">Technology</h5>
+									<h3 class="title gilroy-extra-bold">A Discount Cartridge Is Better Ever.</h3>
+								</div>
+							</div>
+							<a href="" class="link d-flex flex-row align-items-center justify-content-between roboto color-light-red">Read More <img src="img/red-right-arrow.png" alt=""></a>
 						</div>
-						<h5 class="snippet-text">Design Templates</h5>
 					</div>
 					<div class="templates-tile__wrapper">
 						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
+							<img src="img/tile-bg.png" alt="">
+							<div class="bottom-content">
+								<div class="content">
+									<h5 class="subtitle roboto">Software</h5>
+									<h3 class="title gilroy-extra-bold">Quis Nostr Exercitation
+										Ullamco Laboris nisi ut
+										Aliquip exea.</h3>
+								</div>
+							</div>
+							<a href="" class="link d-flex flex-row align-items-center justify-content-between roboto color-light-red">Read More <img src="img/red-right-arrow.png" alt=""></a>
 						</div>
-						<h5 class="snippet-text">Design Templates</h5>
 					</div>
 					<div class="templates-tile__wrapper">
 						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
+							<img src="img/tile-bg.png" alt="">
+							<div class="bottom-content">
+								<div class="content">
+									<h5 class="subtitle roboto">Software</h5>
+									<h3 class="title gilroy-extra-bold">Excepteur sint occaat
+										cupidatat proidet nisi
+										sunt in culpa ,</h3>
+								</div>
+							</div>
+							<a href="" class="link d-flex flex-row align-items-center justify-content-between roboto color-light-red">Read More <img src="img/red-right-arrow.png" alt=""></a>
 						</div>
-						<h5 class="snippet-text">Design Templates</h5>
 					</div>
 					<div class="templates-tile__wrapper">
 						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
+							<img src="img/tile-bg.png" alt="">
+							<div class="bottom-content">
+								<div class="content">
+									<h5 class="subtitle roboto">Software</h5>
+									<h3 class="title gilroy-extra-bold">A Discount Cartridge Is Better Ever.</h3>
+								</div>
+							</div>
+							<a href="" class="link d-flex flex-row align-items-center justify-content-between roboto color-light-red">Read More <img src="img/red-right-arrow.png" alt=""></a>
 						</div>
-						<h5 class="snippet-text">Design Templates</h5>
 					</div>
 					<div class="templates-tile__wrapper">
 						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
+							<img src="img/tile-bg.png" alt="">
+							<div class="bottom-content">
+								<div class="content">
+									<h5 class="subtitle roboto">Software</h5>
+									<h3 class="title gilroy-extra-bold">Quis Nostr Exercitation
+										Ullamco Laboris nisi ut
+										Aliquip exea.</h3>
+								</div>
+							</div>
+							<a href="" class="link d-flex flex-row align-items-center justify-content-between roboto color-light-red">Read More <img src="img/red-right-arrow.png" alt=""></a>
 						</div>
-						<h5 class="snippet-text">Design Templates</h5>
 					</div>
 					<div class="templates-tile__wrapper">
 						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
+							<img src="img/tile-bg.png" alt="">
+							<div class="bottom-content">
+								<div class="content">
+									<h5 class="subtitle roboto">Software</h5>
+									<h3 class="title gilroy-extra-bold">Excepteur sint occaat
+										cupidatat proidet nisi
+										sunt in culpa ,</h3>
+								</div>
+							</div>
+							<a href="" class="link d-flex flex-row align-items-center justify-content-between roboto color-light-red">Read More <img src="img/red-right-arrow.png" alt=""></a>
 						</div>
-						<h5 class="snippet-text">Design Templates</h5>
 					</div>
 					<div class="templates-tile__wrapper">
 						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
+							<img src="img/tile-bg.png" alt="">
+							<div class="bottom-content">
+								<div class="content">
+									<h5 class="subtitle roboto">Software</h5>
+									<h3 class="title gilroy-extra-bold">A Discount Cartridge Is Better Ever.</h3>
+								</div>
+							</div>
+							<a href="" class="link d-flex flex-row align-items-center justify-content-between roboto color-light-red">Read More <img src="img/red-right-arrow.png" alt=""></a>
 						</div>
-						<h5 class="snippet-text">Design Templates</h5>
 					</div>
 					<div class="templates-tile__wrapper">
 						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
+							<img src="img/tile-bg.png" alt="">
+							<div class="bottom-content">
+								<div class="content">
+									<h5 class="subtitle roboto">Software</h5>
+									<h3 class="title gilroy-extra-bold">Quis Nostr Exercitation
+										Ullamco Laboris nisi ut
+										Aliquip exea.</h3>
+								</div>
+							</div>
+							<a href="" class="link d-flex flex-row align-items-center justify-content-between roboto color-light-red">Read More <img src="img/red-right-arrow.png" alt=""></a>
 						</div>
-						<h5 class="snippet-text">Design Templates</h5>
 					</div>
 					<div class="templates-tile__wrapper">
 						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
+							<img src="img/tile-bg.png" alt="">
+							<div class="bottom-content">
+								<div class="content">
+									<h5 class="subtitle roboto">Software</h5>
+									<h3 class="title gilroy-extra-bold">Excepteur sint occaat
+										cupidatat proidet nisi
+										sunt in culpa ,</h3>
+								</div>
+							</div>
+							<a href="" class="link d-flex flex-row align-items-center justify-content-between roboto color-light-red">Read More <img src="img/red-right-arrow.png" alt=""></a>
 						</div>
-						<h5 class="snippet-text">Design Templates</h5>
+					</div>
+					<div class="templates-tile__wrapper">
+						<div class="templates-tile__body">
+							<img src="img/tile-bg.png" alt="">
+							<div class="bottom-content">
+								<div class="content">
+									<h5 class="subtitle roboto">Software</h5>
+									<h3 class="title gilroy-extra-bold">A Discount Cartridge Is Better Ever.</h3>
+								</div>
+							</div>
+							<a href="" class="link d-flex flex-row align-items-center justify-content-between roboto color-light-red">Read More <img src="img/red-right-arrow.png" alt=""></a>
+						</div>
+					</div>
+					<div class="templates-tile__wrapper">
+						<div class="templates-tile__body">
+							<img src="img/tile-bg.png" alt="">
+							<div class="bottom-content">
+								<div class="content">
+									<h5 class="subtitle roboto">Software</h5>
+									<h3 class="title gilroy-extra-bold">Quis Nostr Exercitation
+										Ullamco Laboris nisi ut
+										Aliquip exea.</h3>
+								</div>
+							</div>
+							<a href="" class="link d-flex flex-row align-items-center justify-content-between roboto color-light-red">Read More <img src="img/red-right-arrow.png" alt=""></a>
+						</div>
+					</div>
+					<div class="templates-tile__wrapper">
+						<div class="templates-tile__body">
+							<img src="img/tile-bg.png" alt="">
+							<div class="bottom-content">
+								<div class="content">
+									<h5 class="subtitle roboto">Software</h5>
+									<h3 class="title gilroy-extra-bold">Excepteur sint occaat
+										cupidatat proidet nisi
+										sunt in culpa ,</h3>
+								</div>
+							</div>
+							<a href="" class="link d-flex flex-row align-items-center justify-content-between roboto color-light-red">Read More <img src="img/red-right-arrow.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="text-snippet w-100 d-flex flex-column align-items-center">
+					<a href="#" class="button roboto standard-indent oval red-button standard d-inline-flex flex-row align-items-center">Show More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section p-0 round-snippet-banner">
+	<div class="container-fluid container-xl">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-10 col-lg-12 col-xl-11 width-set">
+				<div class="banner__wrapper">
+					<div class="snippet"></div>
+					<div class="banner__block">
+						<div class="banner__content">
+							<div class="banner__left-side">
+								<h5 class="section__section-subtitle color-light-red rubik">Start your free trial.</h5>
+								<h3 class="section__section-middle-title color-black-gray font-weight-bold gilroy-extra-bold">New user? Start your free trial now.</h3>
+							</div>
+							<div class="banner__right-side">
+								<form class="input-line">
+									<div class="bg-tile">
+										<input type="email" placeholder="Email address" class="standard-input">
+										<button type="submit" class="button red-button standard p-0 d-none d-sm-block">Start Trial</button>
+									</div>
+									<button type="submit" class="button red-button standard p-0 d-block d-sm-none">Start Trial</button>
+								</form>
+								<p class="section__section-middle-description">Already a member? <a href="" class="link color-black-gray">Sign in.</a></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -219,54 +312,47 @@
 	</div>
 </section>
 
-<footer class="standard-top-indent">
+<footer>
 	<div class="container">
-		<div class="row">
-			<div class="col-12">
+		<div class="row justify-content-center">
+			<div class="col-12 col-xl-11">
 				<div class="wrapper-footer">
 					<div class="item-list">
 						<a href="#" class="logo d-inline-flex">
-							<img src="img/white-logo.svg" alt="">
+							<img src="img/logo.png" alt="">
 						</a>
-						<h6 class="title">The Premium and free PowerPoint templates and Keynote slides.</h6>
-						<p class="description"> Slideheap is a dedicated team of energetic designers who are specialized in Presentation Template creation. We want to offer you our best works of high quality resources that will take your presentation to the next level.</p>
+						<p class="description">SlideKit is a dedicated team of energetic designers who are specialized in Presentation Template creation. We want to offer you our best works of high quality resources that will take your presentation to the next level.</p>
 					</div>
 					<div class="item-list">
-						<h6 class="main-title">Categories</h6>
+						<h6 class="main-title">Category</h6>
 						<ul class="list">
-							<li><a href="#">Timelines</a></li>
-							<li><a href="#">Process</a></li>
-							<li><a href="#">Social Media</a></li>
-							<li><a href="#">Marketing Infographics</a></li>
-							<li><a href="#">Goals Infographics</a></li>
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">Development</a></li>
+							<li><a href="#">Wordpress</a></li>
+							<li><a href="#">Online Marketing</a></li>
+							<li><a href="#">Content</a></li>
 						</ul>
 					</div>
 					<div class="item-list">
-						<h6 class="main-title">Quick Links</h6>
+						<h6 class="main-title">About us</h6>
 						<ul class="list">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Work Portfolio</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Plan & Pricing</a></li>
+							<li><a href="#">News</a></li>
+						</ul>
+					</div>
+					<div class="item-list">
+						<h6 class="main-title">Help and support</h6>
+						<ul class="list">
+							<li><a href="#">Frequently Asked Questions</a></li>
 							<li><a href="#">Terms & Conditions</a></li>
-							<li><a href="#">Frequently Asked</a></li>
-							<li><a href="#">Questions</a></li>
 							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">DMCA Policy</a></li>
-							<li><a href="#">Refund Policy</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
-					<div class="item-list context-item">
-						<h6 class="main-title">Connect with us</h6>
-						<p class="main-description">Subscribe newsletter to get new updates.</p>
-						<input type="email" placeholder="Email Address" class="standard-input">
-						<a href="#" class="d-flex flex-row justify-content-center button standard-indent blue-button standard text-center">subscribe</a>
-						<ul class="link-list">
-							<li><a href="#"><img src="img/fb-icon.svg" alt=""></a></li>
-							<li><a href="#"><img src="img/twitter-icon.svg" alt=""></a></li>
-							<li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
-							<li><a href="#"><img src="img/pinterest.svg" alt=""></a></li>
-							<li><a href="#"><img src="img/behance.svg" alt=""></a></li>
 						</ul>
 					</div>
 				</div>
+				<p class="copyright color-black section__section-middle-description text-center">Copyright @2021 SlideKit.com</p>
 			</div>
 		</div>
 	</div>
